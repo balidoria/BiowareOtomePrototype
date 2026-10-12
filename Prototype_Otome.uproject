@@ -18,6 +18,10 @@
 		{
 			"Name": "ModularDialogueSystem",
 			"Enabled": true
+		},
+		{
+			"Name": "MotionWarping",
+			"Enabled": true
 		}
 	]
 }
