@@ -98,9 +98,13 @@ struct UHT_STATICS
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Type_MetaData[] = {
 		{ "Category", "Modular Dialogue" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Helper to find actual Key by DialogueEvents\n" },
+#endif
 		{ "ModuleRelativePath", "Public/ModularDialogueSystemLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Helper to find actual Key by DialogueEvents" },
+#endif
 	};
 #endif // WITH_METADATA
 
@@ -120,7 +124,7 @@ struct UHT_STATICS
 
 // ********** Begin Function GetInputEventKey Property Definitions *********************************
 const UECodeGen_Private::FBytePropertyParams UHT_STATICS::NewProp_InEvent_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams UHT_STATICS::NewProp_InEvent = { "InEvent", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, nullptr, nullptr, 1, STRUCT_OFFSET(ModularDialogueSystemLibrary_eventGetInputEventKey_Parms, InEvent), Z_Construct_UEnum_ModularDialogueSystem_EModularDialogueSystemInputEvents, METADATA_PARAMS(0, nullptr) }; // c141f37c93e959c0d7df708ef240825ba0ee9db2
+const UECodeGen_Private::FEnumPropertyParams UHT_STATICS::NewProp_InEvent = { "InEvent", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, nullptr, nullptr, 1, STRUCT_OFFSET(ModularDialogueSystemLibrary_eventGetInputEventKey_Parms, InEvent), Z_Construct_UEnum_ModularDialogueSystem_EModularDialogueSystemInputEvents, METADATA_PARAMS(0, nullptr) }; // 6e867ee5715943a0f02d7de6e5df3bd704a994e6
 const UECodeGen_Private::FStructPropertyParams UHT_STATICS::NewProp_OutKey = { "OutKey", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Struct, nullptr, nullptr, 1, STRUCT_OFFSET(ModularDialogueSystemLibrary_eventGetInputEventKey_Parms, OutKey), Z_Construct_UScriptStruct_FKey, METADATA_PARAMS(0, nullptr) }; // 64b3e4afc222613fc56ee34bd705dda53a3378d0
 const UECodeGen_Private::FBoolPropertyParams UHT_STATICS::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, nullptr, nullptr, 1, sizeof(bool), sizeof(ModularDialogueSystemLibrary_eventGetInputEventKey_Parms), &UHT_STATICS::NewProp_ReturnValue_SetBit, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const UHT_STATICS::PropPointers[] = {
@@ -170,9 +174,13 @@ struct UHT_STATICS
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Type_MetaData[] = {
 		{ "Category", "Modular Dialogue" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Helper to find DialogueEvent type by Key\n" },
+#endif
 		{ "ModuleRelativePath", "Public/ModularDialogueSystemLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Helper to find DialogueEvent type by Key" },
+#endif
 	};
 #endif // WITH_METADATA
 
@@ -193,7 +201,7 @@ struct UHT_STATICS
 // ********** Begin Function GetInputEventType Property Definitions ********************************
 const UECodeGen_Private::FStructPropertyParams UHT_STATICS::NewProp_InKey = { "InKey", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, nullptr, nullptr, 1, STRUCT_OFFSET(ModularDialogueSystemLibrary_eventGetInputEventType_Parms, InKey), Z_Construct_UScriptStruct_FKey, METADATA_PARAMS(0, nullptr) }; // 64b3e4afc222613fc56ee34bd705dda53a3378d0
 const UECodeGen_Private::FBytePropertyParams UHT_STATICS::NewProp_OutEvent_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams UHT_STATICS::NewProp_OutEvent = { "OutEvent", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Enum, nullptr, nullptr, 1, STRUCT_OFFSET(ModularDialogueSystemLibrary_eventGetInputEventType_Parms, OutEvent), Z_Construct_UEnum_ModularDialogueSystem_EModularDialogueSystemInputEvents, METADATA_PARAMS(0, nullptr) }; // c141f37c93e959c0d7df708ef240825ba0ee9db2
+const UECodeGen_Private::FEnumPropertyParams UHT_STATICS::NewProp_OutEvent = { "OutEvent", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Enum, nullptr, nullptr, 1, STRUCT_OFFSET(ModularDialogueSystemLibrary_eventGetInputEventType_Parms, OutEvent), Z_Construct_UEnum_ModularDialogueSystem_EModularDialogueSystemInputEvents, METADATA_PARAMS(0, nullptr) }; // 6e867ee5715943a0f02d7de6e5df3bd704a994e6
 const UECodeGen_Private::FBoolPropertyParams UHT_STATICS::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, nullptr, nullptr, 1, sizeof(bool), sizeof(ModularDialogueSystemLibrary_eventGetInputEventType_Parms), &UHT_STATICS::NewProp_ReturnValue_SetBit, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const UHT_STATICS::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&UHT_STATICS::NewProp_InKey,
@@ -240,9 +248,13 @@ struct UHT_STATICS
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Type_MetaData[] = {
 		{ "Category", "Modular Dialogue" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// WidgetUseOnly!! Use when exit or next button is pressed\n" },
+#endif
 		{ "ModuleRelativePath", "Public/ModularDialogueSystemLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "WidgetUseOnly!! Use when exit or next button is pressed" },
+#endif
 	};
 #endif // WITH_METADATA
 
@@ -296,9 +308,13 @@ struct UHT_STATICS
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Type_MetaData[] = {
 		{ "Category", "Modular Dialogue" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// WidgetUseOnly!! Use when Player Response is clicked on widget.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/ModularDialogueSystemLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "WidgetUseOnly!! Use when Player Response is clicked on widget." },
+#endif
 	};
 #endif // WITH_METADATA
 
@@ -352,9 +368,13 @@ struct UHT_STATICS
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Type_MetaData[] = {
 		{ "Category", "Modular Dialogue" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// WidgetUseOnly!! Use when PlayerResponse is hovered. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/ModularDialogueSystemLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "WidgetUseOnly!! Use when PlayerResponse is hovered." },
+#endif
 	};
 #endif // WITH_METADATA
 
@@ -419,11 +439,11 @@ struct UHT_STATICS
 	};
 	static FTypeConstructFunc* DependentSingletons[];
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UModularDialogueSystemLibrary_GetInputEventKey, "GetInputEventKey" }, // bc0a18b4e86e35bd85e13ea287a98ca2975b4451
-		{ &Z_Construct_UFunction_UModularDialogueSystemLibrary_GetInputEventType, "GetInputEventType" }, // 87b90fa4594972531cbf2148b47d38ffad158417
-		{ &Z_Construct_UFunction_UModularDialogueSystemLibrary_OnInputReceived, "OnInputReceived" }, // 36625783a27190ff230385cc078261ff6ac1a9fb
-		{ &Z_Construct_UFunction_UModularDialogueSystemLibrary_OnPlayerResponded, "OnPlayerResponded" }, // 1e87c563370ce1ac05db16ad83b98bb882b73bcc
-		{ &Z_Construct_UFunction_UModularDialogueSystemLibrary_OnPlayerResponseHovered, "OnPlayerResponseHovered" }, // 96990eddc858191e4391191776e0e61bcb2e55fd
+		{ &Z_Construct_UFunction_UModularDialogueSystemLibrary_GetInputEventKey, "GetInputEventKey" }, // 011375d96b64211dcc57f84f267bd0984f035763
+		{ &Z_Construct_UFunction_UModularDialogueSystemLibrary_GetInputEventType, "GetInputEventType" }, // 9a48d2ac267f106d33411411114e51ce539aa96d
+		{ &Z_Construct_UFunction_UModularDialogueSystemLibrary_OnInputReceived, "OnInputReceived" }, // 6e1dd5423a42b0cefffbc2ab25c9aa297461ea39
+		{ &Z_Construct_UFunction_UModularDialogueSystemLibrary_OnPlayerResponded, "OnPlayerResponded" }, // a7224a9861117f89bc8d75cefc7655ff9d5eb488
+		{ &Z_Construct_UFunction_UModularDialogueSystemLibrary_OnPlayerResponseHovered, "OnPlayerResponseHovered" }, // 42246bf4a97045bb7de462ed46a591f5838e0cb0
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -499,17 +519,17 @@ UModularDialogueSystemLibrary::~UModularDialogueSystemLibrary() {}
 #ifdef UHT_STATICS
 #error UHT_STATICS already defined
 #endif
-#define UHT_STATICS Z_CompiledInDeferFile_FID_build_U5M_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_ModularDialogueSystem_Source_ModularDialogueSystem_Public_ModularDialogueSystemLibrary_h__Script_ModularDialogueSystem_Statics
+#define UHT_STATICS Z_CompiledInDeferFile_FID_Users_A_A_m_Documents_Unreal_Projects_Prototype_Otome_Plugins_ModularDd7e461cf47d1V8_Source_ModularDialogueSystem_Public_ModularDialogueSystemLibrary_h__Script_ModularDialogueSystem_Statics
 struct UHT_STATICS
 {
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
 		{ Z_Construct_UScriptStruct_FModularDialogueSystemEvents, Z_Construct_UScriptStruct_FModularDialogueSystemEvents_Statics::NewStructOps, TEXT("ModularDialogueSystemEvents"),&Z_Registration_Info_UScriptStruct_FModularDialogueSystemEvents, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FModularDialogueSystemEvents), 2315453791U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UModularDialogueSystemLibrary, TEXT("UModularDialogueSystemLibrary"), &Z_Registration_Info_UClass_UModularDialogueSystemLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UModularDialogueSystemLibrary), 306497797U) },
+		{ Z_Construct_UClass_UModularDialogueSystemLibrary, TEXT("UModularDialogueSystemLibrary"), &Z_Registration_Info_UClass_UModularDialogueSystemLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UModularDialogueSystemLibrary), 1226124639U) },
 	};
 }; // UHT_STATICS 
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_ModularDialogueSystem_Source_ModularDialogueSystem_Public_ModularDialogueSystemLibrary_h__Script_ModularDialogueSystem_2ebb9a044db7df39c92c5fd7fd9d64d5d49425b8{
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_A_A_m_Documents_Unreal_Projects_Prototype_Otome_Plugins_ModularDd7e461cf47d1V8_Source_ModularDialogueSystem_Public_ModularDialogueSystemLibrary_h__Script_ModularDialogueSystem_74363343bb2d13d9a742c3ba77fcf83a6a77c870{
 	TEXT("/Script/ModularDialogueSystem"),
 	UHT_STATICS::ClassInfo, UE_ARRAY_COUNT(UHT_STATICS::ClassInfo),
 	UHT_STATICS::ScriptStructInfo, UE_ARRAY_COUNT(UHT_STATICS::ScriptStructInfo),

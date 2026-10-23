@@ -106,7 +106,7 @@ struct UHT_STATICS
 // ********** Begin Delegate FModularGlobalOnDialogueFinished Property Definitions *****************
 const UECodeGen_Private::FObjectPropertyParams UHT_STATICS::NewProp_DialogueObject = { "DialogueObject", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_ModularDialogueSystem_eventModularGlobalOnDialogueFinished_Parms, DialogueObject), Z_Construct_UClass_UModularDialogueObject, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FBytePropertyParams UHT_STATICS::NewProp_Status_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams UHT_STATICS::NewProp_Status = { "Status", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_ModularDialogueSystem_eventModularGlobalOnDialogueFinished_Parms, Status), Z_Construct_UEnum_ModularDialogueSystem_EModularDialogueStatus, METADATA_PARAMS(0, nullptr) }; // e4334c45368bf0b831f04a4d6d1c47203b8b125c
+const UECodeGen_Private::FEnumPropertyParams UHT_STATICS::NewProp_Status = { "Status", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_ModularDialogueSystem_eventModularGlobalOnDialogueFinished_Parms, Status), Z_Construct_UEnum_ModularDialogueSystem_EModularDialogueStatus, METADATA_PARAMS(0, nullptr) }; // 3b43d537a96a431b67f7b5a5cb2064be9d53f145
 const UECodeGen_Private::FPropertyParamsBase* const UHT_STATICS::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&UHT_STATICS::NewProp_DialogueObject,
 	(const UECodeGen_Private::FPropertyParamsBase*)&UHT_STATICS::NewProp_Status_Underlying,
@@ -143,10 +143,14 @@ struct UHT_STATICS
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Type_MetaData[] = {
 		{ "Category", "Modular Dialogue" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Aborts currently executing Dialogue\n" },
+#endif
 		{ "DefaultToSelf", "WorldContextObject" },
 		{ "ModuleRelativePath", "Public/ModularDialogueSubsystem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Aborts currently executing Dialogue" },
+#endif
 	};
 #endif // WITH_METADATA
 
@@ -209,10 +213,14 @@ struct UHT_STATICS
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Type_MetaData[] = {
 		{ "Category", "Modular Dialogue" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Updates DialogueWidget with the given Widget.\n//  Doesn't work if there is an Dialogue with \"Executing\" status.\n//  Works at the start of Dialogue or end of Dialogue. Can be called from DialogueAction's PrepareContext or EndAction.\n" },
+#endif
 		{ "DefaultToSelf", "WorldContextObject" },
 		{ "ModuleRelativePath", "Public/ModularDialogueSubsystem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Updates DialogueWidget with the given Widget.\n Doesn't work if there is an Dialogue with \"Executing\" status.\n Works at the start of Dialogue or end of Dialogue. Can be called from DialogueAction's PrepareContext or EndAction." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_NewWidget_MetaData[] = {
 		{ "EditInline", "true" },
@@ -281,10 +289,14 @@ struct UHT_STATICS
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Type_MetaData[] = {
 		{ "Category", "Modular Dialogue" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Getter for DialogueWidget system uses.\n" },
+#endif
 		{ "DefaultToSelf", "WorldContextObject" },
 		{ "ModuleRelativePath", "Public/ModularDialogueSubsystem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Getter for DialogueWidget system uses." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ReturnValue_MetaData[] = {
 		{ "EditInline", "true" },
@@ -345,10 +357,14 @@ struct UHT_STATICS
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Type_MetaData[] = {
 		{ "Category", "Modular Dialogue" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Getter for currently executing Dialogue\n" },
+#endif
 		{ "DefaultToSelf", "WorldContextObject" },
 		{ "ModuleRelativePath", "Public/ModularDialogueSubsystem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Getter for currently executing Dialogue" },
+#endif
 	};
 #endif // WITH_METADATA
 
@@ -400,9 +416,13 @@ struct UHT_STATICS
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Type_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Bound to Dialogue's Finished event.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/ModularDialogueSubsystem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Bound to Dialogue's Finished event." },
+#endif
 	};
 #endif // WITH_METADATA
 
@@ -445,9 +465,13 @@ struct UHT_STATICS
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Type_MetaData[] = {
 		{ "Category", "Modular Dialogue" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Stars to Dialogue with the NPC selected by System itself (InteractionWidget assigned one)\n//  Should be called from Input Event by Player itself.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/ModularDialogueSubsystem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Stars to Dialogue with the NPC selected by System itself (InteractionWidget assigned one)\n Should be called from Input Event by Player itself." },
+#endif
 	};
 #endif // WITH_METADATA
 
@@ -510,9 +534,13 @@ struct UHT_STATICS
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Type_MetaData[] = {
 		{ "Category", "Modular Dialogue" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Should be used for Scripted scenarios.\n//  System tries to start Dialogue with the given Player and NPC\n" },
+#endif
 		{ "ModuleRelativePath", "Public/ModularDialogueSubsystem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Should be used for Scripted scenarios.\n System tries to start Dialogue with the given Player and NPC" },
+#endif
 	};
 #endif // WITH_METADATA
 
@@ -572,49 +600,79 @@ struct UHT_STATICS
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Type_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * \n */" },
+#endif
 		{ "IncludePath", "ModularDialogueSubsystem.h" },
 		{ "ModuleRelativePath", "Public/ModularDialogueSubsystem.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PlayerComponent_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Player's DialogueComponent\n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/ModularDialogueSubsystem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Player's DialogueComponent" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_RegisteredComponents_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Registered NPC Dialogue Components\n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/ModularDialogueSubsystem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Registered NPC Dialogue Components" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SelectedComponent_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Selected NPC Dialogue Component\n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/ModularDialogueSubsystem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Selected NPC Dialogue Component" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InputAction_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Input action to be triggered when Dialogue is started and ended.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/ModularDialogueSubsystem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Input action to be triggered when Dialogue is started and ended." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InteractionWidget_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Interaction widget to assign selected NPC's widget component.\n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/ModularDialogueSubsystem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Interaction widget to assign selected NPC's widget component." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DialogueWidget_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Dialogue's UI itself\n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/ModularDialogueSubsystem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Dialogue's UI itself" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnDialogueStarted_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// **********************************************************\n// ** Global events for gameplay system, feel free to bind **\n// **********************************************************\n" },
+#endif
 		{ "ModuleRelativePath", "Public/ModularDialogueSubsystem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "** Global events for gameplay system, feel free to bind **" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnDialogueFinished_MetaData[] = {
 		{ "ModuleRelativePath", "Public/ModularDialogueSubsystem.h" },
@@ -644,13 +702,13 @@ struct UHT_STATICS
 	};
 	static FTypeConstructFunc* DependentSingletons[];
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UModularDialogueSubsystem_AbortExecutingDialogue, "AbortExecutingDialogue" }, // aeab814d82231a286770fdcbb49b93ddefa2ff2e
-		{ &Z_Construct_UFunction_UModularDialogueSubsystem_ChangeDialogueWidget, "ChangeDialogueWidget" }, // 20d3ee2916218b4b67e19d12a578a9eb261b97eb
-		{ &Z_Construct_UFunction_UModularDialogueSubsystem_GetDialogueWidget, "GetDialogueWidget" }, // 7a33c81b0bd844cd765a5268ada3ac538231b43d
-		{ &Z_Construct_UFunction_UModularDialogueSubsystem_GetExecutingDialogue, "GetExecutingDialogue" }, // 3ea51600a64b5b8c91a75626cbdb0b52b0182f6b
-		{ &Z_Construct_UFunction_UModularDialogueSubsystem_InternalOnDialogueFinished, "InternalOnDialogueFinished" }, // 5953daf1ac7e98a316c19fd320b1bac3aa7a898c
-		{ &Z_Construct_UFunction_UModularDialogueSubsystem_TryStartDialogue, "TryStartDialogue" }, // d13e352031b623319c7a6baec32749873cfdf8b1
-		{ &Z_Construct_UFunction_UModularDialogueSubsystem_TryStartDialogueManually, "TryStartDialogueManually" }, // b459e2919421510bd40a4e350a192b3518d442d7
+		{ &Z_Construct_UFunction_UModularDialogueSubsystem_AbortExecutingDialogue, "AbortExecutingDialogue" }, // 751c1fcdd1d97baba71ceb1616c8976484744e28
+		{ &Z_Construct_UFunction_UModularDialogueSubsystem_ChangeDialogueWidget, "ChangeDialogueWidget" }, // 7082049ff419a7d2fcac7945d43c4d51de5f6415
+		{ &Z_Construct_UFunction_UModularDialogueSubsystem_GetDialogueWidget, "GetDialogueWidget" }, // 9f43eb479748e5628eb981ce13506fee8742896e
+		{ &Z_Construct_UFunction_UModularDialogueSubsystem_GetExecutingDialogue, "GetExecutingDialogue" }, // d8d4d9da85b0fdf84b1216f70df7d00b7c1d243b
+		{ &Z_Construct_UFunction_UModularDialogueSubsystem_InternalOnDialogueFinished, "InternalOnDialogueFinished" }, // a9a4a1bf18ef479210fcedaa4f43fe09c7d8ba15
+		{ &Z_Construct_UFunction_UModularDialogueSubsystem_TryStartDialogue, "TryStartDialogue" }, // d0a25a2a1f788e9cff75e0595af06208b72b61a4
+		{ &Z_Construct_UFunction_UModularDialogueSubsystem_TryStartDialogueManually, "TryStartDialogueManually" }, // 276ab645ea42aee0e9f587cdf62caec9381fe483
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -668,7 +726,7 @@ const UECodeGen_Private::FObjectPropertyParams UHT_STATICS::NewProp_InputAction 
 const UECodeGen_Private::FObjectPropertyParams UHT_STATICS::NewProp_InteractionWidget = { "InteractionWidget", nullptr, (EPropertyFlags)0x0124080000080008, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, nullptr, nullptr, 1, STRUCT_OFFSET(UModularDialogueSubsystem, InteractionWidget), Z_Construct_UClass_UModularDialogueSystemUserWidget, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InteractionWidget_MetaData), NewProp_InteractionWidget_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams UHT_STATICS::NewProp_DialogueWidget = { "DialogueWidget", nullptr, (EPropertyFlags)0x0124080000080008, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, nullptr, nullptr, 1, STRUCT_OFFSET(UModularDialogueSubsystem, DialogueWidget), Z_Construct_UClass_UModularDialogueSystemUserWidget, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DialogueWidget_MetaData), NewProp_DialogueWidget_MetaData) };
 const UECodeGen_Private::FMulticastDelegatePropertyParams UHT_STATICS::NewProp_OnDialogueStarted = { "OnDialogueStarted", nullptr, (EPropertyFlags)0x0020080010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, nullptr, nullptr, 1, STRUCT_OFFSET(UModularDialogueSubsystem, OnDialogueStarted), Z_Construct_UDelegateFunction_ModularDialogueSystem_ModularGlobalOnDialogueStarted__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnDialogueStarted_MetaData), NewProp_OnDialogueStarted_MetaData) }; // 0d56b2ca47a79ff084717b6c1be2754bb8a68f69
-const UECodeGen_Private::FMulticastDelegatePropertyParams UHT_STATICS::NewProp_OnDialogueFinished = { "OnDialogueFinished", nullptr, (EPropertyFlags)0x0020080010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, nullptr, nullptr, 1, STRUCT_OFFSET(UModularDialogueSubsystem, OnDialogueFinished), Z_Construct_UDelegateFunction_ModularDialogueSystem_ModularGlobalOnDialogueFinished__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnDialogueFinished_MetaData), NewProp_OnDialogueFinished_MetaData) }; // f289a08fc7cb112e568b629aaf06500be5ec36d8
+const UECodeGen_Private::FMulticastDelegatePropertyParams UHT_STATICS::NewProp_OnDialogueFinished = { "OnDialogueFinished", nullptr, (EPropertyFlags)0x0020080010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, nullptr, nullptr, 1, STRUCT_OFFSET(UModularDialogueSubsystem, OnDialogueFinished), Z_Construct_UDelegateFunction_ModularDialogueSystem_ModularGlobalOnDialogueFinished__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnDialogueFinished_MetaData), NewProp_OnDialogueFinished_MetaData) }; // 523c983d0d896d7b29675fd5230b8a487d06a36f
 const UECodeGen_Private::FPropertyParamsBase* const UHT_STATICS::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&UHT_STATICS::NewProp_PlayerComponent,
 	(const UECodeGen_Private::FPropertyParamsBase*)&UHT_STATICS::NewProp_RegisteredComponents_Inner,
@@ -749,14 +807,14 @@ UModularDialogueSubsystem::~UModularDialogueSubsystem() {}
 #ifdef UHT_STATICS
 #error UHT_STATICS already defined
 #endif
-#define UHT_STATICS Z_CompiledInDeferFile_FID_build_U5M_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_ModularDialogueSystem_Source_ModularDialogueSystem_Public_ModularDialogueSubsystem_h__Script_ModularDialogueSystem_Statics
+#define UHT_STATICS Z_CompiledInDeferFile_FID_Users_A_A_m_Documents_Unreal_Projects_Prototype_Otome_Plugins_ModularDd7e461cf47d1V8_Source_ModularDialogueSystem_Public_ModularDialogueSubsystem_h__Script_ModularDialogueSystem_Statics
 struct UHT_STATICS
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UModularDialogueSubsystem, TEXT("UModularDialogueSubsystem"), &Z_Registration_Info_UClass_UModularDialogueSubsystem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UModularDialogueSubsystem), 2322516263U) },
+		{ Z_Construct_UClass_UModularDialogueSubsystem, TEXT("UModularDialogueSubsystem"), &Z_Registration_Info_UClass_UModularDialogueSubsystem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UModularDialogueSubsystem), 477499199U) },
 	};
 }; // UHT_STATICS 
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_ModularDialogueSystem_Source_ModularDialogueSystem_Public_ModularDialogueSubsystem_h__Script_ModularDialogueSystem_10373c335aa3675d6dacfd4f717be1e941b56392{
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_A_A_m_Documents_Unreal_Projects_Prototype_Otome_Plugins_ModularDd7e461cf47d1V8_Source_ModularDialogueSystem_Public_ModularDialogueSubsystem_h__Script_ModularDialogueSystem_a7ad4479e60ac715161af1b5bd5208f99de8e73d{
 	TEXT("/Script/ModularDialogueSystem"),
 	UHT_STATICS::ClassInfo, UE_ARRAY_COUNT(UHT_STATICS::ClassInfo),
 	nullptr, 0,

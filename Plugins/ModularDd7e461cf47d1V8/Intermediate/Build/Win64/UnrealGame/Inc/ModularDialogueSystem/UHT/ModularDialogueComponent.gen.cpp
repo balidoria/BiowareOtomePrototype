@@ -40,9 +40,13 @@ struct UHT_STATICS
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Type_MetaData[] = {
 		{ "Category", "Modular Dialogue" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// To get an Actor determined in Parameters variable.\n//\x09Returns nullptr if not found.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/ModularDialogueComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "To get an Actor determined in Parameters variable.\n      Returns nullptr if not found." },
+#endif
 	};
 #endif // WITH_METADATA
 
@@ -101,21 +105,33 @@ struct UHT_STATICS
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_NPC_Name_MetaData[] = {
 		{ "Category", "Modular Dialogue|NPC" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// In the Dialogue Widget, it can be shown.\n// Not used for Player.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/ModularDialogueComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "In the Dialogue Widget, it can be shown.\nNot used for Player." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OverlapRadius_MetaData[] = {
 		{ "Category", "Modular Dialogue|NPC" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Maximum range of dialogue interaction.\n// ** Not used for Player. **\n" },
+#endif
 		{ "ModuleRelativePath", "Public/ModularDialogueComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Maximum range of dialogue interaction.\n** Not used for Player. **" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bCheckLineTrace_MetaData[] = {
 		{ "Category", "Modular Dialogue|NPC" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// In addition to OverlapRadius, should we check for LineTrace for dialogue interaction?\n// ** Not used for Player. **\n" },
+#endif
 		{ "ModuleRelativePath", "Public/ModularDialogueComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "In addition to OverlapRadius, should we check for LineTrace for dialogue interaction?\n** Not used for Player. **" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_LineTraceChannel_MetaData[] = {
 		{ "Category", "Modular Dialogue|NPC" },
@@ -125,15 +141,23 @@ struct UHT_STATICS
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DialogueSet_MetaData[] = {
 		{ "Category", "Modular Dialogue|NPC" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Dialogue set to execute when the Dialogue starts.\n// ** Not used for Player. **\n" },
+#endif
 		{ "ModuleRelativePath", "Public/ModularDialogueComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Dialogue set to execute when the Dialogue starts.\n** Not used for Player. **" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Parameters_MetaData[] = {
 		{ "Category", "Modular Dialogue" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Modularity to reference any actor in the world to get access easily in Component or Dialogue Actions.\n// Can be used for both NPC and Player.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/ModularDialogueComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Modularity to reference any actor in the world to get access easily in Component or Dialogue Actions.\nCan be used for both NPC and Player." },
+#endif
 	};
 #endif // WITH_METADATA
 
@@ -157,7 +181,7 @@ struct UHT_STATICS
 	};
 	static FTypeConstructFunc* DependentSingletons[];
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UModularDialogueComponent_GetParameter, "GetParameter" }, // 0ac5b6d09deee89f57602934c7e1a9d9e41c4be1
+		{ &Z_Construct_UFunction_UModularDialogueComponent_GetParameter, "GetParameter" }, // e493f9f0a9da70930303f6dd25eea8d1ed5d9a1e
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -254,14 +278,14 @@ UModularDialogueComponent::~UModularDialogueComponent() {}
 #ifdef UHT_STATICS
 #error UHT_STATICS already defined
 #endif
-#define UHT_STATICS Z_CompiledInDeferFile_FID_build_U5M_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_ModularDialogueSystem_Source_ModularDialogueSystem_Public_ModularDialogueComponent_h__Script_ModularDialogueSystem_Statics
+#define UHT_STATICS Z_CompiledInDeferFile_FID_Users_A_A_m_Documents_Unreal_Projects_Prototype_Otome_Plugins_ModularDd7e461cf47d1V8_Source_ModularDialogueSystem_Public_ModularDialogueComponent_h__Script_ModularDialogueSystem_Statics
 struct UHT_STATICS
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UModularDialogueComponent, TEXT("UModularDialogueComponent"), &Z_Registration_Info_UClass_UModularDialogueComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UModularDialogueComponent), 56830382U) },
+		{ Z_Construct_UClass_UModularDialogueComponent, TEXT("UModularDialogueComponent"), &Z_Registration_Info_UClass_UModularDialogueComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UModularDialogueComponent), 1412184129U) },
 	};
 }; // UHT_STATICS 
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_ModularDialogueSystem_Source_ModularDialogueSystem_Public_ModularDialogueComponent_h__Script_ModularDialogueSystem_50f83a03b08740747b29250ceaff99078db8ee84{
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_A_A_m_Documents_Unreal_Projects_Prototype_Otome_Plugins_ModularDd7e461cf47d1V8_Source_ModularDialogueSystem_Public_ModularDialogueComponent_h__Script_ModularDialogueSystem_99603a9318c7668e49f2c93f61dd24ceb62e1123{
 	TEXT("/Script/ModularDialogueSystem"),
 	UHT_STATICS::ClassInfo, UE_ARRAY_COUNT(UHT_STATICS::ClassInfo),
 	nullptr, 0,

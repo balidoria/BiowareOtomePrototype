@@ -23,7 +23,7 @@ class UObject;
 enum class EModularDialogueStatus : uint8;
 
 // ********** Begin Class UModularDialogueSubsystem ************************************************
-#define FID_build_U5M_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_ModularDialogueSystem_Source_ModularDialogueSystem_Public_ModularDialogueSubsystem_h_26_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_Users_A_A_m_Documents_Unreal_Projects_Prototype_Otome_Plugins_ModularDd7e461cf47d1V8_Source_ModularDialogueSystem_Public_ModularDialogueSubsystem_h_26_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execInternalOnDialogueFinished); \
 	DECLARE_FUNCTION(execGetDialogueWidget); \
 	DECLARE_FUNCTION(execChangeDialogueWidget); \
@@ -36,7 +36,7 @@ enum class EModularDialogueStatus : uint8;
 struct Z_Construct_UClass_UModularDialogueSubsystem_Statics;
 MODULARDIALOGUESYSTEM_API UClass* Z_Construct_UClass_UModularDialogueSubsystem(ETypeConstructPhase);
 
-#define FID_build_U5M_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_ModularDialogueSystem_Source_ModularDialogueSystem_Public_ModularDialogueSubsystem_h_26_INCLASS_NO_PURE_DECLS \
+#define FID_Users_A_A_m_Documents_Unreal_Projects_Prototype_Otome_Plugins_ModularDd7e461cf47d1V8_Source_ModularDialogueSystem_Public_ModularDialogueSubsystem_h_26_INCLASS_NO_PURE_DECLS \
 private: \
 	friend struct ::Z_Construct_UClass_UModularDialogueSubsystem_Statics; \
 	friend MODULARDIALOGUESYSTEM_API UClass* ::Z_Construct_UClass_UModularDialogueSubsystem(ETypeConstructPhase); \
@@ -45,7 +45,7 @@ public: \
 	DECLARE_SERIALIZER(UModularDialogueSubsystem)
 
 
-#define FID_build_U5M_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_ModularDialogueSystem_Source_ModularDialogueSystem_Public_ModularDialogueSubsystem_h_26_ENHANCED_CONSTRUCTORS \
+#define FID_Users_A_A_m_Documents_Unreal_Projects_Prototype_Otome_Plugins_ModularDd7e461cf47d1V8_Source_ModularDialogueSystem_Public_ModularDialogueSubsystem_h_26_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	UModularDialogueSubsystem(UModularDialogueSubsystem&&) = delete; \
 	UModularDialogueSubsystem(const UModularDialogueSubsystem&) = delete; \
@@ -55,13 +55,13 @@ public: \
 	NO_API virtual ~UModularDialogueSubsystem();
 
 
-#define FID_build_U5M_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_ModularDialogueSystem_Source_ModularDialogueSystem_Public_ModularDialogueSubsystem_h_23_PROLOG
-#define FID_build_U5M_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_ModularDialogueSystem_Source_ModularDialogueSystem_Public_ModularDialogueSubsystem_h_26_GENERATED_BODY \
+#define FID_Users_A_A_m_Documents_Unreal_Projects_Prototype_Otome_Plugins_ModularDd7e461cf47d1V8_Source_ModularDialogueSystem_Public_ModularDialogueSubsystem_h_23_PROLOG
+#define FID_Users_A_A_m_Documents_Unreal_Projects_Prototype_Otome_Plugins_ModularDd7e461cf47d1V8_Source_ModularDialogueSystem_Public_ModularDialogueSubsystem_h_26_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_build_U5M_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_ModularDialogueSystem_Source_ModularDialogueSystem_Public_ModularDialogueSubsystem_h_26_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_build_U5M_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_ModularDialogueSystem_Source_ModularDialogueSystem_Public_ModularDialogueSubsystem_h_26_INCLASS_NO_PURE_DECLS \
-	FID_build_U5M_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_ModularDialogueSystem_Source_ModularDialogueSystem_Public_ModularDialogueSubsystem_h_26_ENHANCED_CONSTRUCTORS \
+	FID_Users_A_A_m_Documents_Unreal_Projects_Prototype_Otome_Plugins_ModularDd7e461cf47d1V8_Source_ModularDialogueSystem_Public_ModularDialogueSubsystem_h_26_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Users_A_A_m_Documents_Unreal_Projects_Prototype_Otome_Plugins_ModularDd7e461cf47d1V8_Source_ModularDialogueSystem_Public_ModularDialogueSubsystem_h_26_INCLASS_NO_PURE_DECLS \
+	FID_Users_A_A_m_Documents_Unreal_Projects_Prototype_Otome_Plugins_ModularDd7e461cf47d1V8_Source_ModularDialogueSystem_Public_ModularDialogueSubsystem_h_26_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -71,6 +71,6 @@ class UModularDialogueSubsystem;
 // ********** End Class UModularDialogueSubsystem **************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_build_U5M_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_ModularDialogueSystem_Source_ModularDialogueSystem_Public_ModularDialogueSubsystem_h
+#define CURRENT_FILE_ID FID_Users_A_A_m_Documents_Unreal_Projects_Prototype_Otome_Plugins_ModularDd7e461cf47d1V8_Source_ModularDialogueSystem_Public_ModularDialogueSubsystem_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

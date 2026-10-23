@@ -19,7 +19,7 @@
 		{
 			"Name": "MotionWarping",
 			"Type": "Runtime",
-			"LoadingPhase": "PreDefault"
+			"LoadingPhase": "Default"
 		}
 	]
 }
