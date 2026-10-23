@@ -22,7 +22,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 struct Z_Construct_UScriptStruct_FAttributeBasedRootMotionComponentPrePhysicsTickFunction_Statics;
 MOTIONWARPING_API UScriptStruct* Z_Construct_UScriptStruct_FAttributeBasedRootMotionComponentPrePhysicsTickFunction(ETypeConstructPhase);
 
-#define FID_Engine_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_AttributeBasedRootMotionComponent_h_16_GENERATED_BODY \
+#define FID_Users_A_A_m_Documents_Unreal_Projects_Prototype_Otome_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_AttributeBasedRootMotionComponent_h_16_GENERATED_BODY \
 	friend struct ::Z_Construct_UScriptStruct_FAttributeBasedRootMotionComponentPrePhysicsTickFunction_Statics; \
 	UE_NODEBUG static UScriptStruct* StaticStruct() { return Z_Construct_UScriptStruct_FAttributeBasedRootMotionComponentPrePhysicsTickFunction(ETypeConstructPhase::Inner); } \
 	typedef FTickFunction Super;
@@ -35,7 +35,7 @@ struct FAttributeBasedRootMotionComponentPrePhysicsTickFunction;
 struct Z_Construct_UClass_UAttributeBasedRootMotionComponent_Statics;
 MOTIONWARPING_API UClass* Z_Construct_UClass_UAttributeBasedRootMotionComponent(ETypeConstructPhase);
 
-#define FID_Engine_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_AttributeBasedRootMotionComponent_h_58_INCLASS_NO_PURE_DECLS \
+#define FID_Users_A_A_m_Documents_Unreal_Projects_Prototype_Otome_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_AttributeBasedRootMotionComponent_h_58_INCLASS_NO_PURE_DECLS \
 private: \
 	friend struct ::Z_Construct_UClass_UAttributeBasedRootMotionComponent_Statics; \
 	friend MOTIONWARPING_API UClass* ::Z_Construct_UClass_UAttributeBasedRootMotionComponent(ETypeConstructPhase); \
@@ -44,7 +44,7 @@ public: \
 	DECLARE_SERIALIZER(UAttributeBasedRootMotionComponent)
 
 
-#define FID_Engine_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_AttributeBasedRootMotionComponent_h_58_ENHANCED_CONSTRUCTORS \
+#define FID_Users_A_A_m_Documents_Unreal_Projects_Prototype_Otome_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_AttributeBasedRootMotionComponent_h_58_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	UAttributeBasedRootMotionComponent(UAttributeBasedRootMotionComponent&&) = delete; \
 	UAttributeBasedRootMotionComponent(const UAttributeBasedRootMotionComponent&) = delete; \
@@ -54,12 +54,12 @@ public: \
 	MOTIONWARPING_API virtual ~UAttributeBasedRootMotionComponent();
 
 
-#define FID_Engine_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_AttributeBasedRootMotionComponent_h_55_PROLOG
-#define FID_Engine_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_AttributeBasedRootMotionComponent_h_58_GENERATED_BODY \
+#define FID_Users_A_A_m_Documents_Unreal_Projects_Prototype_Otome_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_AttributeBasedRootMotionComponent_h_55_PROLOG
+#define FID_Users_A_A_m_Documents_Unreal_Projects_Prototype_Otome_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_AttributeBasedRootMotionComponent_h_58_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Engine_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_AttributeBasedRootMotionComponent_h_58_INCLASS_NO_PURE_DECLS \
-	FID_Engine_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_AttributeBasedRootMotionComponent_h_58_ENHANCED_CONSTRUCTORS \
+	FID_Users_A_A_m_Documents_Unreal_Projects_Prototype_Otome_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_AttributeBasedRootMotionComponent_h_58_INCLASS_NO_PURE_DECLS \
+	FID_Users_A_A_m_Documents_Unreal_Projects_Prototype_Otome_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_AttributeBasedRootMotionComponent_h_58_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -69,7 +69,7 @@ class UAttributeBasedRootMotionComponent;
 // ********** End Class UAttributeBasedRootMotionComponent *****************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Engine_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_AttributeBasedRootMotionComponent_h
+#define CURRENT_FILE_ID FID_Users_A_A_m_Documents_Unreal_Projects_Prototype_Otome_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_AttributeBasedRootMotionComponent_h
 
 // ********** Begin Enum EAttributeBasedRootMotionMode *********************************************
 #define FOREACH_ENUM_EATTRIBUTEBASEDROOTMOTIONMODE(op) \

@@ -1,0 +1,14 @@
+"C:/Users/A_A_m/Documents/Unreal Projects/Prototype_Otome/Plugins/ModularDd7e461cf47d1V8/Intermediate/Build/Win64/x64/UnrealGame/Development/ModularDialogueSystem/Module.ModularDialogueSystem.cpp"
+@"C:/Users/A_A_m/Documents/Unreal Projects/Prototype_Otome/Plugins/ModularDd7e461cf47d1V8/Intermediate/Build/Win64/x64/UnrealGame/Development/ModularDialogueSystem/ModularDialogueSystem.Shared.rsp"
+/FI"C:/Users/A_A_m/Documents/Unreal Projects/Prototype_Otome/Intermediate/Build/Win64/x64/Prototype_Otome/Development/Engine/SharedPCH.Engine.Project.ValApi.ValExpApi.Cpp20.h"
+/FI"C:/Users/A_A_m/Documents/Unreal Projects/Prototype_Otome/Plugins/ModularDd7e461cf47d1V8/Intermediate/Build/Win64/x64/UnrealGame/Development/ModularDialogueSystem/Definitions.ModularDialogueSystem.h"
+/Yu"C:/Users/A_A_m/Documents/Unreal Projects/Prototype_Otome/Intermediate/Build/Win64/x64/Prototype_Otome/Development/Engine/SharedPCH.Engine.Project.ValApi.ValExpApi.Cpp20.h"
+/Fp"C:/Users/A_A_m/Documents/Unreal Projects/Prototype_Otome/Intermediate/Build/Win64/x64/Prototype_Otome/Development/Engine/SharedPCH.Engine.Project.ValApi.ValExpApi.Cpp20.h.pch"
+/Fo"C:/Users/A_A_m/Documents/Unreal Projects/Prototype_Otome/Plugins/ModularDd7e461cf47d1V8/Intermediate/Build/Win64/x64/UnrealGame/Development/ModularDialogueSystem/Module.ModularDialogueSystem.cpp.obj"
+/experimental:log "C:/Users/A_A_m/Documents/Unreal Projects/Prototype_Otome/Plugins/ModularDd7e461cf47d1V8/Intermediate/Build/Win64/x64/UnrealGame/Development/ModularDialogueSystem/Module.ModularDialogueSystem.cpp.sarif"
+/sourceDependencies "C:/Users/A_A_m/Documents/Unreal Projects/Prototype_Otome/Plugins/ModularDd7e461cf47d1V8/Intermediate/Build/Win64/x64/UnrealGame/Development/ModularDialogueSystem/Module.ModularDialogueSystem.cpp.dep.json"
+/nologo
+/TP
+/GR-
+/std:c++20
+/wd5054

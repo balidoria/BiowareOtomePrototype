@@ -24,14 +24,14 @@ enum class EMotionWarpRotationType : uint8;
 enum class EWarpPointAnimProvider : uint8;
 
 // ********** Begin Class URootMotionModifier_SkewWarp *********************************************
-#define FID_Engine_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_RootMotionModifier_SkewWarp_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_Users_A_A_m_Documents_Unreal_Projects_Prototype_Otome_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_RootMotionModifier_SkewWarp_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execAddRootMotionModifierSkewWarp);
 
 
 struct Z_Construct_UClass_URootMotionModifier_SkewWarp_Statics;
 MOTIONWARPING_API UClass* Z_Construct_UClass_URootMotionModifier_SkewWarp(ETypeConstructPhase);
 
-#define FID_Engine_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_RootMotionModifier_SkewWarp_h_13_INCLASS_NO_PURE_DECLS \
+#define FID_Users_A_A_m_Documents_Unreal_Projects_Prototype_Otome_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_RootMotionModifier_SkewWarp_h_13_INCLASS_NO_PURE_DECLS \
 private: \
 	friend struct ::Z_Construct_UClass_URootMotionModifier_SkewWarp_Statics; \
 	friend MOTIONWARPING_API UClass* ::Z_Construct_UClass_URootMotionModifier_SkewWarp(ETypeConstructPhase); \
@@ -40,7 +40,7 @@ public: \
 	DECLARE_SERIALIZER(URootMotionModifier_SkewWarp)
 
 
-#define FID_Engine_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_RootMotionModifier_SkewWarp_h_13_ENHANCED_CONSTRUCTORS \
+#define FID_Users_A_A_m_Documents_Unreal_Projects_Prototype_Otome_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_RootMotionModifier_SkewWarp_h_13_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	URootMotionModifier_SkewWarp(URootMotionModifier_SkewWarp&&) = delete; \
 	URootMotionModifier_SkewWarp(const URootMotionModifier_SkewWarp&) = delete; \
@@ -50,13 +50,13 @@ public: \
 	MOTIONWARPING_API virtual ~URootMotionModifier_SkewWarp();
 
 
-#define FID_Engine_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_RootMotionModifier_SkewWarp_h_10_PROLOG
-#define FID_Engine_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_RootMotionModifier_SkewWarp_h_13_GENERATED_BODY \
+#define FID_Users_A_A_m_Documents_Unreal_Projects_Prototype_Otome_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_RootMotionModifier_SkewWarp_h_10_PROLOG
+#define FID_Users_A_A_m_Documents_Unreal_Projects_Prototype_Otome_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_RootMotionModifier_SkewWarp_h_13_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Engine_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_RootMotionModifier_SkewWarp_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_Engine_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_RootMotionModifier_SkewWarp_h_13_INCLASS_NO_PURE_DECLS \
-	FID_Engine_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_RootMotionModifier_SkewWarp_h_13_ENHANCED_CONSTRUCTORS \
+	FID_Users_A_A_m_Documents_Unreal_Projects_Prototype_Otome_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_RootMotionModifier_SkewWarp_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Users_A_A_m_Documents_Unreal_Projects_Prototype_Otome_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_RootMotionModifier_SkewWarp_h_13_INCLASS_NO_PURE_DECLS \
+	FID_Users_A_A_m_Documents_Unreal_Projects_Prototype_Otome_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_RootMotionModifier_SkewWarp_h_13_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -66,6 +66,6 @@ class URootMotionModifier_SkewWarp;
 // ********** End Class URootMotionModifier_SkewWarp ***********************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Engine_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_RootMotionModifier_SkewWarp_h
+#define CURRENT_FILE_ID FID_Users_A_A_m_Documents_Unreal_Projects_Prototype_Otome_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_RootMotionModifier_SkewWarp_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

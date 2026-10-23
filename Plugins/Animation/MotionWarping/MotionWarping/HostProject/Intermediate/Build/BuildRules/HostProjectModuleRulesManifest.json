@@ -1,0 +1,11 @@
+{
+	"SourceFiles": [
+		"C:\\Users\\A_A_m\\Documents\\Unreal Projects\\Prototype_Otome\\Plugins\\Animation\\MotionWarping\\MotionWarping\\HostProject\\Plugins\\MotionWarping\\Source\\MotionWarping\\MotionWarping.Build.cs",
+		"C:\\Users\\A_A_m\\Documents\\Unreal Projects\\Prototype_Otome\\Plugins\\Animation\\MotionWarping\\MotionWarping\\HostProject\\Intermediate\\Source\\HostProject.Build.cs",
+		"C:\\Users\\A_A_m\\Documents\\Unreal Projects\\Prototype_Otome\\Plugins\\Animation\\MotionWarping\\MotionWarping\\HostProject\\Intermediate\\Source\\HostProject.Target.cs",
+		"C:\\Users\\A_A_m\\Documents\\Unreal Projects\\Prototype_Otome\\Plugins\\Animation\\MotionWarping\\MotionWarping\\HostProject\\Intermediate\\Source\\HostProjectClient.Target.cs",
+		"C:\\Users\\A_A_m\\Documents\\Unreal Projects\\Prototype_Otome\\Plugins\\Animation\\MotionWarping\\MotionWarping\\HostProject\\Intermediate\\Source\\HostProjectEditor.Target.cs",
+		"C:\\Users\\A_A_m\\Documents\\Unreal Projects\\Prototype_Otome\\Plugins\\Animation\\MotionWarping\\MotionWarping\\HostProject\\Intermediate\\Source\\HostProjectServer.Target.cs"
+	],
+	"EngineVersion": "5.8.4"
+}

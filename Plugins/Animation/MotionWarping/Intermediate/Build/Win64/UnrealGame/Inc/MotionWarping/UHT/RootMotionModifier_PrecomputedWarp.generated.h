@@ -22,7 +22,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 struct Z_Construct_UScriptStruct_FPrecomputedWarpCurve_Statics;
 MOTIONWARPING_API UScriptStruct* Z_Construct_UScriptStruct_FPrecomputedWarpCurve(ETypeConstructPhase);
 
-#define FID_Engine_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_RootMotionModifier_PrecomputedWarp_h_25_GENERATED_BODY \
+#define FID_Users_A_A_m_Documents_Unreal_Projects_Prototype_Otome_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_RootMotionModifier_PrecomputedWarp_h_25_GENERATED_BODY \
 	friend struct ::Z_Construct_UScriptStruct_FPrecomputedWarpCurve_Statics; \
 	UE_NODEBUG static UScriptStruct* StaticStruct() { return Z_Construct_UScriptStruct_FPrecomputedWarpCurve(ETypeConstructPhase::Inner); }
 
@@ -34,7 +34,7 @@ struct FPrecomputedWarpCurve;
 struct Z_Construct_UScriptStruct_FPrecomputedWarpSteeringSettings_Statics;
 MOTIONWARPING_API UScriptStruct* Z_Construct_UScriptStruct_FPrecomputedWarpSteeringSettings(ETypeConstructPhase);
 
-#define FID_Engine_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_RootMotionModifier_PrecomputedWarp_h_43_GENERATED_BODY \
+#define FID_Users_A_A_m_Documents_Unreal_Projects_Prototype_Otome_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_RootMotionModifier_PrecomputedWarp_h_43_GENERATED_BODY \
 	friend struct ::Z_Construct_UScriptStruct_FPrecomputedWarpSteeringSettings_Statics; \
 	UE_NODEBUG static UScriptStruct* StaticStruct() { return Z_Construct_UScriptStruct_FPrecomputedWarpSteeringSettings(ETypeConstructPhase::Inner); }
 
@@ -44,17 +44,17 @@ struct FPrecomputedWarpSteeringSettings;
 
 // ********** Begin Class URootMotionModifier_PrecomputedWarp **************************************
 #if WITH_EDITOR
-#define FID_Engine_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_RootMotionModifier_PrecomputedWarp_h_74_RPC_WRAPPERS_NO_PURE_DECLS_EDITOR \
+#define FID_Users_A_A_m_Documents_Unreal_Projects_Prototype_Otome_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_RootMotionModifier_PrecomputedWarp_h_74_RPC_WRAPPERS_NO_PURE_DECLS_EDITOR \
 	DECLARE_FUNCTION(execSetAlignOffset);
 #else // WITH_EDITOR
-#define FID_Engine_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_RootMotionModifier_PrecomputedWarp_h_74_RPC_WRAPPERS_NO_PURE_DECLS_EDITOR
+#define FID_Users_A_A_m_Documents_Unreal_Projects_Prototype_Otome_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_RootMotionModifier_PrecomputedWarp_h_74_RPC_WRAPPERS_NO_PURE_DECLS_EDITOR
 #endif
 
 
 struct Z_Construct_UClass_URootMotionModifier_PrecomputedWarp_Statics;
 MOTIONWARPING_API UClass* Z_Construct_UClass_URootMotionModifier_PrecomputedWarp(ETypeConstructPhase);
 
-#define FID_Engine_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_RootMotionModifier_PrecomputedWarp_h_74_INCLASS_NO_PURE_DECLS \
+#define FID_Users_A_A_m_Documents_Unreal_Projects_Prototype_Otome_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_RootMotionModifier_PrecomputedWarp_h_74_INCLASS_NO_PURE_DECLS \
 private: \
 	friend struct ::Z_Construct_UClass_URootMotionModifier_PrecomputedWarp_Statics; \
 	friend MOTIONWARPING_API UClass* ::Z_Construct_UClass_URootMotionModifier_PrecomputedWarp(ETypeConstructPhase); \
@@ -63,7 +63,7 @@ public: \
 	DECLARE_SERIALIZER(URootMotionModifier_PrecomputedWarp)
 
 
-#define FID_Engine_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_RootMotionModifier_PrecomputedWarp_h_74_ENHANCED_CONSTRUCTORS \
+#define FID_Users_A_A_m_Documents_Unreal_Projects_Prototype_Otome_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_RootMotionModifier_PrecomputedWarp_h_74_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	URootMotionModifier_PrecomputedWarp(URootMotionModifier_PrecomputedWarp&&) = delete; \
 	URootMotionModifier_PrecomputedWarp(const URootMotionModifier_PrecomputedWarp&) = delete; \
@@ -73,13 +73,13 @@ public: \
 	MOTIONWARPING_API virtual ~URootMotionModifier_PrecomputedWarp();
 
 
-#define FID_Engine_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_RootMotionModifier_PrecomputedWarp_h_71_PROLOG
-#define FID_Engine_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_RootMotionModifier_PrecomputedWarp_h_74_GENERATED_BODY \
+#define FID_Users_A_A_m_Documents_Unreal_Projects_Prototype_Otome_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_RootMotionModifier_PrecomputedWarp_h_71_PROLOG
+#define FID_Users_A_A_m_Documents_Unreal_Projects_Prototype_Otome_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_RootMotionModifier_PrecomputedWarp_h_74_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Engine_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_RootMotionModifier_PrecomputedWarp_h_74_RPC_WRAPPERS_NO_PURE_DECLS_EDITOR \
-	FID_Engine_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_RootMotionModifier_PrecomputedWarp_h_74_INCLASS_NO_PURE_DECLS \
-	FID_Engine_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_RootMotionModifier_PrecomputedWarp_h_74_ENHANCED_CONSTRUCTORS \
+	FID_Users_A_A_m_Documents_Unreal_Projects_Prototype_Otome_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_RootMotionModifier_PrecomputedWarp_h_74_RPC_WRAPPERS_NO_PURE_DECLS_EDITOR \
+	FID_Users_A_A_m_Documents_Unreal_Projects_Prototype_Otome_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_RootMotionModifier_PrecomputedWarp_h_74_INCLASS_NO_PURE_DECLS \
+	FID_Users_A_A_m_Documents_Unreal_Projects_Prototype_Otome_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_RootMotionModifier_PrecomputedWarp_h_74_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -89,7 +89,7 @@ class URootMotionModifier_PrecomputedWarp;
 // ********** End Class URootMotionModifier_PrecomputedWarp ****************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Engine_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_RootMotionModifier_PrecomputedWarp_h
+#define CURRENT_FILE_ID FID_Users_A_A_m_Documents_Unreal_Projects_Prototype_Otome_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_RootMotionModifier_PrecomputedWarp_h
 
 // ********** Begin Enum EPrecomputedWarpWeightCurveType *******************************************
 #define FOREACH_ENUM_EPRECOMPUTEDWARPWEIGHTCURVETYPE(op) \
