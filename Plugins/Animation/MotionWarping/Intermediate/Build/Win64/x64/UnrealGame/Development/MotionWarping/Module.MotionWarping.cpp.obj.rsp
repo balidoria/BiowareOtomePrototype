@@ -1,0 +1,14 @@
+"C:/Users/A_A_m/Documents/Unreal Projects/Prototype_Otome/Plugins/Animation/MotionWarping/Intermediate/Build/Win64/x64/UnrealGame/Development/MotionWarping/Module.MotionWarping.cpp"
+@"C:/Users/A_A_m/Documents/Unreal Projects/Prototype_Otome/Plugins/Animation/MotionWarping/Intermediate/Build/Win64/x64/UnrealGame/Development/MotionWarping/MotionWarping.Shared.rsp"
+/FI"C:/Users/A_A_m/Documents/Unreal Projects/Prototype_Otome/Intermediate/Build/Win64/x64/Prototype_Otome/Development/Engine/SharedPCH.Engine.Project.ValApi.ValExpApi.Cpp20.h"
+/FI"C:/Users/A_A_m/Documents/Unreal Projects/Prototype_Otome/Plugins/Animation/MotionWarping/Intermediate/Build/Win64/x64/UnrealGame/Development/MotionWarping/Definitions.MotionWarping.h"
+/Yu"C:/Users/A_A_m/Documents/Unreal Projects/Prototype_Otome/Intermediate/Build/Win64/x64/Prototype_Otome/Development/Engine/SharedPCH.Engine.Project.ValApi.ValExpApi.Cpp20.h"
+/Fp"C:/Users/A_A_m/Documents/Unreal Projects/Prototype_Otome/Intermediate/Build/Win64/x64/Prototype_Otome/Development/Engine/SharedPCH.Engine.Project.ValApi.ValExpApi.Cpp20.h.pch"
+/Fo"C:/Users/A_A_m/Documents/Unreal Projects/Prototype_Otome/Plugins/Animation/MotionWarping/Intermediate/Build/Win64/x64/UnrealGame/Development/MotionWarping/Module.MotionWarping.cpp.obj"
+/experimental:log "C:/Users/A_A_m/Documents/Unreal Projects/Prototype_Otome/Plugins/Animation/MotionWarping/Intermediate/Build/Win64/x64/UnrealGame/Development/MotionWarping/Module.MotionWarping.cpp.sarif"
+/sourceDependencies "C:/Users/A_A_m/Documents/Unreal Projects/Prototype_Otome/Plugins/Animation/MotionWarping/Intermediate/Build/Win64/x64/UnrealGame/Development/MotionWarping/Module.MotionWarping.cpp.dep.json"
+/nologo
+/TP
+/GR-
+/std:c++20
+/wd5054
