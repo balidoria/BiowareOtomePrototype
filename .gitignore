@@ -2186,3 +2186,10 @@ Plugins/ModularDd7e461cf47d1V8/Intermediate/Build/Win64/x64/UnrealGame/Shipping/
 Plugins/ModularDd7e461cf47d1V8/Intermediate/Build/Win64/x64/UnrealGame/Shipping/ModularDialogueSystem/Module.ModularDialogueSystem.cpp
 Plugins/ModularDd7e461cf47d1V8/Intermediate/Build/Win64/x64/UnrealGame/Shipping/ModularDialogueSystem/Module.ModularDialogueSystem.cpp.dep.json
 Plugins/ModularDd7e461cf47d1V8/Intermediate/Build/Win64/x64/UnrealGame/Shipping/ModularDialogueSystem/Module.ModularDialogueSystem.cpp.obj.rsp
+Content/ModularLostRuinKit/Maps/ExampleMap_Lumen.umap
+Content/ModularLostRuinKit/Maps/ExampleMap_Static.umap
+Content/ModularLostRuinKit/Maps/Showcase.umap
+Content/Grid_Materials/Level/LV_Demo.umap
+Content/Art/EnvironmentArt/ModularLostRuinKit/Maps/ExampleMap_Lumen.umap
+Content/Art/EnvironmentArt/ModularLostRuinKit/Maps/ExampleMap_Static.umap
+Content/Art/EnvironmentArt/ModularLostRuinKit/Maps/Showcase.umap
