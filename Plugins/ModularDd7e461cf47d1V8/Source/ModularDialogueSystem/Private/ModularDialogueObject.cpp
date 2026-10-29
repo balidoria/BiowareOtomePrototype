@@ -39,15 +39,15 @@ void UModularDialogueObject::PrepareContext(AActor* InPlayer, AActor* InNPC, UMo
 		
 		for (auto It = NPCNodes.CreateIterator(); It; ++It)
 		{
-			for (int32 i = 0; i < It.Value().NPCActions.Num(); ++i)
-			{
-				It.Value().NPCActions[i] = DuplicateObject(It.Value().NPCActions[i], this);
-				It.Value().NPCActions[i]->PrepareContext(Player, NPC);
-			}
 			for (int32 i = 0; i < It.Value().PlayerActions.Num(); ++i)
 			{
 				It.Value().PlayerActions[i] = DuplicateObject(It.Value().PlayerActions[i], this);
 				It.Value().PlayerActions[i]->PrepareContext(Player, NPC);
+			}
+			for (int32 i = 0; i < It.Value().NPCActions.Num(); ++i)
+			{
+				It.Value().NPCActions[i] = DuplicateObject(It.Value().NPCActions[i], this);
+				It.Value().NPCActions[i]->PrepareContext(Player, NPC);
 			}
 		}
 		
