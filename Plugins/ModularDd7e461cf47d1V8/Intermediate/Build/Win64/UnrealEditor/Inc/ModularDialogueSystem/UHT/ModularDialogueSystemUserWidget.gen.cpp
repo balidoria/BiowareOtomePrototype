@@ -50,9 +50,13 @@ struct UHT_STATICS
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Type_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Use to highlight a Player Response\n" },
+#endif
 		{ "ModuleRelativePath", "Public/ModularDialogueSystemUserWidget.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Use to highlight a Player Response" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Index_MetaData[] = {
 		{ "NativeConst", "" },
@@ -127,10 +131,14 @@ struct UHT_STATICS
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Type_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Use to add PlayerResponse for current NPC Node\n" },
+#endif
 		{ "DisplayName", "Populate Player Response" },
 		{ "ModuleRelativePath", "Public/ModularDialogueSystemUserWidget.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Use to add PlayerResponse for current NPC Node" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Index_MetaData[] = {
 		{ "NativeConst", "" },
@@ -209,10 +217,14 @@ struct UHT_STATICS
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Type_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Use to clear out PlayerResponses to execute next NPC Node.\n" },
+#endif
 		{ "DisplayName", "Reset Player Responses" },
 		{ "ModuleRelativePath", "Public/ModularDialogueSystemUserWidget.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Use to clear out PlayerResponses to execute next NPC Node." },
+#endif
 	};
 #endif // WITH_METADATA
 
@@ -268,9 +280,13 @@ struct UHT_STATICS
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Type_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Use to handle visibility of Exit button\n" },
+#endif
 		{ "ModuleRelativePath", "Public/ModularDialogueSystemUserWidget.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Use to handle visibility of Exit button" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bIsVisible_MetaData[] = {
 		{ "NativeConst", "" },
@@ -345,9 +361,13 @@ struct UHT_STATICS
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Type_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Use to handle visibility of Next button\n" },
+#endif
 		{ "ModuleRelativePath", "Public/ModularDialogueSystemUserWidget.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Use to handle visibility of Next button" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bIsVisible_MetaData[] = {
 		{ "NativeConst", "" },
@@ -422,9 +442,13 @@ struct UHT_STATICS
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Type_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Use for updating NPC Name in the widget\n" },
+#endif
 		{ "ModuleRelativePath", "Public/ModularDialogueSystemUserWidget.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Use for updating NPC Name in the widget" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Name_MetaData[] = {
 		{ "NativeConst", "" },
@@ -495,9 +519,13 @@ struct UHT_STATICS
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Type_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Use to show NPC Text for current NPC Node\n" },
+#endif
 		{ "ModuleRelativePath", "Public/ModularDialogueSystemUserWidget.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Use to show NPC Text for current NPC Node" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Response_MetaData[] = {
 		{ "NativeConst", "" },
@@ -568,13 +596,13 @@ struct UHT_STATICS
 	};
 	static FTypeConstructFunc* DependentSingletons[];
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UModularDialogueSystemUserWidget_HighlightPlayerResponse, "HighlightPlayerResponse" }, // 31cb8d73a7b875d719f5b03821f500b5c7e413f4
-		{ &Z_Construct_UFunction_UModularDialogueSystemUserWidget_K2_PopulatePlayerResponse, "K2_PopulatePlayerResponse" }, // 727d8008b69aa9a237de9873cb7e35df8446e077
-		{ &Z_Construct_UFunction_UModularDialogueSystemUserWidget_K2_ResetPlayerResponses, "K2_ResetPlayerResponses" }, // 257f7dab7a36369184b7b5cf98f7f96a1f7823a9
-		{ &Z_Construct_UFunction_UModularDialogueSystemUserWidget_UpdateExitButton, "UpdateExitButton" }, // ba46aa7ab662f0ee54251a24e41aa1342d910f04
-		{ &Z_Construct_UFunction_UModularDialogueSystemUserWidget_UpdateNextButton, "UpdateNextButton" }, // 60e69d739b09d61056478e55f63a72fffbfcc53d
-		{ &Z_Construct_UFunction_UModularDialogueSystemUserWidget_UpdateNPCName, "UpdateNPCName" }, // 8612e4505cd8812993942778b309c6de3d9ab0cf
-		{ &Z_Construct_UFunction_UModularDialogueSystemUserWidget_UpdateNPCText, "UpdateNPCText" }, // 062767f5b5da80545fe94ff6124a8cc521f87632
+		{ &Z_Construct_UFunction_UModularDialogueSystemUserWidget_HighlightPlayerResponse, "HighlightPlayerResponse" }, // 0dda0bafa58766c060d516731c728eb5cc1eecdb
+		{ &Z_Construct_UFunction_UModularDialogueSystemUserWidget_K2_PopulatePlayerResponse, "K2_PopulatePlayerResponse" }, // 84e51994acd69be226926d06ffd204ba903574d1
+		{ &Z_Construct_UFunction_UModularDialogueSystemUserWidget_K2_ResetPlayerResponses, "K2_ResetPlayerResponses" }, // 1c24602782472414c98f440881bb9b1acc25444f
+		{ &Z_Construct_UFunction_UModularDialogueSystemUserWidget_UpdateExitButton, "UpdateExitButton" }, // 7f8d83e1a0f088872f07345e6fc34880907aa57f
+		{ &Z_Construct_UFunction_UModularDialogueSystemUserWidget_UpdateNextButton, "UpdateNextButton" }, // d4971d1819cdcb59f259f4d0aa9c4d4f3cad691c
+		{ &Z_Construct_UFunction_UModularDialogueSystemUserWidget_UpdateNPCName, "UpdateNPCName" }, // 8350bb2cae87c26e7229b02b0cc18637ea3c7137
+		{ &Z_Construct_UFunction_UModularDialogueSystemUserWidget_UpdateNPCText, "UpdateNPCText" }, // b543cea119f0d38e5781370fa39140f9b5bf542b
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -650,14 +678,14 @@ UModularDialogueSystemUserWidget::~UModularDialogueSystemUserWidget() {}
 #ifdef UHT_STATICS
 #error UHT_STATICS already defined
 #endif
-#define UHT_STATICS Z_CompiledInDeferFile_FID_build_U5M_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_ModularDialogueSystem_Source_ModularDialogueSystem_Public_ModularDialogueSystemUserWidget_h__Script_ModularDialogueSystem_Statics
+#define UHT_STATICS Z_CompiledInDeferFile_FID_Users_A_A_m_Documents_Unreal_Projects_Prototype_Otome_Plugins_ModularDd7e461cf47d1V8_Source_ModularDialogueSystem_Public_ModularDialogueSystemUserWidget_h__Script_ModularDialogueSystem_Statics
 struct UHT_STATICS
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UModularDialogueSystemUserWidget, TEXT("UModularDialogueSystemUserWidget"), &Z_Registration_Info_UClass_UModularDialogueSystemUserWidget, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UModularDialogueSystemUserWidget), 526734280U) },
+		{ Z_Construct_UClass_UModularDialogueSystemUserWidget, TEXT("UModularDialogueSystemUserWidget"), &Z_Registration_Info_UClass_UModularDialogueSystemUserWidget, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UModularDialogueSystemUserWidget), 872820376U) },
 	};
 }; // UHT_STATICS 
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_ModularDialogueSystem_Source_ModularDialogueSystem_Public_ModularDialogueSystemUserWidget_h__Script_ModularDialogueSystem_c511093ea9594d6519acc2f0118863c4d8debe87{
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_A_A_m_Documents_Unreal_Projects_Prototype_Otome_Plugins_ModularDd7e461cf47d1V8_Source_ModularDialogueSystem_Public_ModularDialogueSystemUserWidget_h__Script_ModularDialogueSystem_7ffa3e7135a96da4ba5223c767f875ea778279b9{
 	TEXT("/Script/ModularDialogueSystem"),
 	UHT_STATICS::ClassInfo, UE_ARRAY_COUNT(UHT_STATICS::ClassInfo),
 	nullptr, 0,

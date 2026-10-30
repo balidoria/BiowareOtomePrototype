@@ -1,0 +1,469 @@
+{
+    "version": "2.1.0",
+    "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+    "runs": [
+        {
+            "results": [
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'APawn::GetMovementBase': GetMovementBase is deprecated. Use GetMovementBaseObject or GetMovementBaseInterfaceData instead. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/A_A_m/Documents/Unreal Projects/Prototype_Otome/Plugins/Animation/MotionWarping/Intermediate/Build/Win64/x64/UnrealEditor/Development/MotionWarping/Module.MotionWarping.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Program Files/Epic Games/UE_5.8/Engine/Source/Runtime/Engine/Classes/GameFramework/Character.h"
+                                },
+                                "region": {
+                                    "startLine": 798,
+                                    "startColumn": 31,
+                                    "snippet": {
+                                        "text": "\tvirtual UPrimitiveComponent* GetMovementBase() const override final { return Cast<UPrimitiveComponent>(GetMovementBaseObject()); }"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'UMotionWarpingComponent::bPredictingTrajectory': Prediction Warping API subject to change. - This API is experimental. As such, there is no guarantee that it won't change or be removed in future releases. Please use at your own risk."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/A_A_m/Documents/Unreal Projects/Prototype_Otome/Plugins/Animation/MotionWarping/Intermediate/Build/Win64/x64/UnrealEditor/Development/MotionWarping/Module.MotionWarping.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Users/A_A_m/Documents/Unreal Projects/Prototype_Otome/Plugins/Animation/MotionWarping/Source/MotionWarping/Private/MotionWarpingComponent.cpp"
+                                },
+                                "region": {
+                                    "startLine": 432,
+                                    "startColumn": 7,
+                                    "snippet": {
+                                        "text": "\tif (!bPredictingTrajectory && Context.Animation.IsValid())"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'UMotionWarpingComponent::bPredictingTrajectory': Prediction Warping API subject to change. - This API is experimental. As such, there is no guarantee that it won't change or be removed in future releases. Please use at your own risk."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/A_A_m/Documents/Unreal Projects/Prototype_Otome/Plugins/Animation/MotionWarping/Intermediate/Build/Win64/x64/UnrealEditor/Development/MotionWarping/Module.MotionWarping.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Users/A_A_m/Documents/Unreal Projects/Prototype_Otome/Plugins/Animation/MotionWarping/Source/MotionWarping/Private/MotionWarpingComponent.cpp"
+                                },
+                                "region": {
+                                    "startLine": 702,
+                                    "startColumn": 8,
+                                    "snippet": {
+                                        "text": "\t\tif (!bPredictingTrajectory)"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'UMotionWarpingComponent::bPredictingTrajectory': Prediction Warping API subject to change. - This API is experimental. As such, there is no guarantee that it won't change or be removed in future releases. Please use at your own risk."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/A_A_m/Documents/Unreal Projects/Prototype_Otome/Plugins/Animation/MotionWarping/Intermediate/Build/Win64/x64/UnrealEditor/Development/MotionWarping/Module.MotionWarping.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Users/A_A_m/Documents/Unreal Projects/Prototype_Otome/Plugins/Animation/MotionWarping/Source/MotionWarping/Private/MotionWarpingComponent.cpp"
+                                },
+                                "region": {
+                                    "startLine": 713,
+                                    "startColumn": 25,
+                                    "snippet": {
+                                        "text": "\tif (NumRemoved > 0 && !bPredictingTrajectory)"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'UMotionWarpingComponent::bPredictingTrajectory': Prediction Warping API subject to change. - This API is experimental. As such, there is no guarantee that it won't change or be removed in future releases. Please use at your own risk."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/A_A_m/Documents/Unreal Projects/Prototype_Otome/Plugins/Animation/MotionWarping/Intermediate/Build/Win64/x64/UnrealEditor/Development/MotionWarping/Module.MotionWarping.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Users/A_A_m/Documents/Unreal Projects/Prototype_Otome/Plugins/Animation/MotionWarping/Source/MotionWarping/Private/MotionWarpingComponent.cpp"
+                                },
+                                "region": {
+                                    "startLine": 731,
+                                    "startColumn": 25,
+                                    "snippet": {
+                                        "text": "\tif (NumRemoved > 0 && !bPredictingTrajectory)"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'UMotionWarpingComponent::bPredictingTrajectory': Prediction Warping API subject to change. - This API is experimental. As such, there is no guarantee that it won't change or be removed in future releases. Please use at your own risk."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/A_A_m/Documents/Unreal Projects/Prototype_Otome/Plugins/Animation/MotionWarping/Intermediate/Build/Win64/x64/UnrealEditor/Development/MotionWarping/Module.MotionWarping.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Users/A_A_m/Documents/Unreal Projects/Prototype_Otome/Plugins/Animation/MotionWarping/Source/MotionWarping/Private/MotionWarpingComponent.cpp"
+                                },
+                                "region": {
+                                    "startLine": 786,
+                                    "startColumn": 2,
+                                    "snippet": {
+                                        "text": "\tcheck(!bPredictingTrajectory);"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'UMotionWarpingComponent::bPredictingTrajectory': Prediction Warping API subject to change. - This API is experimental. As such, there is no guarantee that it won't change or be removed in future releases. Please use at your own risk."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/A_A_m/Documents/Unreal Projects/Prototype_Otome/Plugins/Animation/MotionWarping/Intermediate/Build/Win64/x64/UnrealEditor/Development/MotionWarping/Module.MotionWarping.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Users/A_A_m/Documents/Unreal Projects/Prototype_Otome/Plugins/Animation/MotionWarping/Source/MotionWarping/Private/MotionWarpingComponent.cpp"
+                                },
+                                "region": {
+                                    "startLine": 791,
+                                    "startColumn": 2,
+                                    "snippet": {
+                                        "text": "\tbPredictingTrajectory = true;"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'UMotionWarpingComponent::CachedOwnerAdapter': Prediction Warping API subject to change. - This API is experimental. As such, there is no guarantee that it won't change or be removed in future releases. Please use at your own risk."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/A_A_m/Documents/Unreal Projects/Prototype_Otome/Plugins/Animation/MotionWarping/Intermediate/Build/Win64/x64/UnrealEditor/Development/MotionWarping/Module.MotionWarping.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Users/A_A_m/Documents/Unreal Projects/Prototype_Otome/Plugins/Animation/MotionWarping/Source/MotionWarping/Private/MotionWarpingComponent.cpp"
+                                },
+                                "region": {
+                                    "startLine": 793,
+                                    "startColumn": 2,
+                                    "snippet": {
+                                        "text": "\tCachedOwnerAdapter = OwnerAdapter;"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'UMotionWarpingComponent::PredictionAdapter': Prediction Warping API subject to change. - This API is experimental. As such, there is no guarantee that it won't change or be removed in future releases. Please use at your own risk."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/A_A_m/Documents/Unreal Projects/Prototype_Otome/Plugins/Animation/MotionWarping/Intermediate/Build/Win64/x64/UnrealEditor/Development/MotionWarping/Module.MotionWarping.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Users/A_A_m/Documents/Unreal Projects/Prototype_Otome/Plugins/Animation/MotionWarping/Source/MotionWarping/Private/MotionWarpingComponent.cpp"
+                                },
+                                "region": {
+                                    "startLine": 796,
+                                    "startColumn": 7,
+                                    "snippet": {
+                                        "text": "\tif (!PredictionAdapter)"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'UMotionWarpingComponent::PredictionAdapter': Prediction Warping API subject to change. - This API is experimental. As such, there is no guarantee that it won't change or be removed in future releases. Please use at your own risk."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/A_A_m/Documents/Unreal Projects/Prototype_Otome/Plugins/Animation/MotionWarping/Intermediate/Build/Win64/x64/UnrealEditor/Development/MotionWarping/Module.MotionWarping.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Users/A_A_m/Documents/Unreal Projects/Prototype_Otome/Plugins/Animation/MotionWarping/Source/MotionWarping/Private/MotionWarpingComponent.cpp"
+                                },
+                                "region": {
+                                    "startLine": 800,
+                                    "startColumn": 3,
+                                    "snippet": {
+                                        "text": "\t\tPredictionAdapter = MontageTrajectoryAdapter;"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'UMotionWarpingComponent::PredictionAdapter': Prediction Warping API subject to change. - This API is experimental. As such, there is no guarantee that it won't change or be removed in future releases. Please use at your own risk."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/A_A_m/Documents/Unreal Projects/Prototype_Otome/Plugins/Animation/MotionWarping/Intermediate/Build/Win64/x64/UnrealEditor/Development/MotionWarping/Module.MotionWarping.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Users/A_A_m/Documents/Unreal Projects/Prototype_Otome/Plugins/Animation/MotionWarping/Source/MotionWarping/Private/MotionWarpingComponent.cpp"
+                                },
+                                "region": {
+                                    "startLine": 804,
+                                    "startColumn": 18,
+                                    "snippet": {
+                                        "text": "\t\tOwnerAdapter = PredictionAdapter;"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'UMotionWarpingComponent::CachedOwnerAdapter': Prediction Warping API subject to change. - This API is experimental. As such, there is no guarantee that it won't change or be removed in future releases. Please use at your own risk."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/A_A_m/Documents/Unreal Projects/Prototype_Otome/Plugins/Animation/MotionWarping/Intermediate/Build/Win64/x64/UnrealEditor/Development/MotionWarping/Module.MotionWarping.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Users/A_A_m/Documents/Unreal Projects/Prototype_Otome/Plugins/Animation/MotionWarping/Source/MotionWarping/Private/MotionWarpingComponent.cpp"
+                                },
+                                "region": {
+                                    "startLine": 808,
+                                    "startColumn": 43,
+                                    "snippet": {
+                                        "text": "\tMontageTrajectoryAdapter->InitializeFrom(CachedOwnerAdapter, MontageInstance);"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'UMotionWarpingComponent::bPredictingTrajectory': Prediction Warping API subject to change. - This API is experimental. As such, there is no guarantee that it won't change or be removed in future releases. Please use at your own risk."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/A_A_m/Documents/Unreal Projects/Prototype_Otome/Plugins/Animation/MotionWarping/Intermediate/Build/Win64/x64/UnrealEditor/Development/MotionWarping/Module.MotionWarping.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Users/A_A_m/Documents/Unreal Projects/Prototype_Otome/Plugins/Animation/MotionWarping/Source/MotionWarping/Private/MotionWarpingComponent.cpp"
+                                },
+                                "region": {
+                                    "startLine": 813,
+                                    "startColumn": 2,
+                                    "snippet": {
+                                        "text": "\tcheck(bPredictingTrajectory);"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'UMotionWarpingComponent::CachedOwnerAdapter': Prediction Warping API subject to change. - This API is experimental. As such, there is no guarantee that it won't change or be removed in future releases. Please use at your own risk."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/A_A_m/Documents/Unreal Projects/Prototype_Otome/Plugins/Animation/MotionWarping/Intermediate/Build/Win64/x64/UnrealEditor/Development/MotionWarping/Module.MotionWarping.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Users/A_A_m/Documents/Unreal Projects/Prototype_Otome/Plugins/Animation/MotionWarping/Source/MotionWarping/Private/MotionWarpingComponent.cpp"
+                                },
+                                "region": {
+                                    "startLine": 816,
+                                    "startColumn": 17,
+                                    "snippet": {
+                                        "text": "\tOwnerAdapter = CachedOwnerAdapter;"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'UMotionWarpingComponent::PredictionAdapter': Prediction Warping API subject to change. - This API is experimental. As such, there is no guarantee that it won't change or be removed in future releases. Please use at your own risk."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/A_A_m/Documents/Unreal Projects/Prototype_Otome/Plugins/Animation/MotionWarping/Intermediate/Build/Win64/x64/UnrealEditor/Development/MotionWarping/Module.MotionWarping.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Users/A_A_m/Documents/Unreal Projects/Prototype_Otome/Plugins/Animation/MotionWarping/Source/MotionWarping/Private/MotionWarpingComponent.cpp"
+                                },
+                                "region": {
+                                    "startLine": 819,
+                                    "startColumn": 118,
+                                    "snippet": {
+                                        "text": "\tif (UMotionWarpingMontageTrajectoryAdapter* MontageTrajectoryAdapter = Cast<UMotionWarpingMontageTrajectoryAdapter>(PredictionAdapter))"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'UMotionWarpingComponent::bPredictingTrajectory': Prediction Warping API subject to change. - This API is experimental. As such, there is no guarantee that it won't change or be removed in future releases. Please use at your own risk."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/A_A_m/Documents/Unreal Projects/Prototype_Otome/Plugins/Animation/MotionWarping/Intermediate/Build/Win64/x64/UnrealEditor/Development/MotionWarping/Module.MotionWarping.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Users/A_A_m/Documents/Unreal Projects/Prototype_Otome/Plugins/Animation/MotionWarping/Source/MotionWarping/Private/MotionWarpingComponent.cpp"
+                                },
+                                "region": {
+                                    "startLine": 824,
+                                    "startColumn": 2,
+                                    "snippet": {
+                                        "text": "\tbPredictingTrajectory = false;"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'UMotionWarpingComponent::bPredictingTrajectory': Prediction Warping API subject to change. - This API is experimental. As such, there is no guarantee that it won't change or be removed in future releases. Please use at your own risk."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/A_A_m/Documents/Unreal Projects/Prototype_Otome/Plugins/Animation/MotionWarping/Intermediate/Build/Win64/x64/UnrealEditor/Development/MotionWarping/Module.MotionWarping.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Users/A_A_m/Documents/Unreal Projects/Prototype_Otome/Plugins/Animation/MotionWarping/Source/MotionWarping/Private/MotionWarpingComponent.cpp"
+                                },
+                                "region": {
+                                    "startLine": 829,
+                                    "startColumn": 9,
+                                    "snippet": {
+                                        "text": "\treturn bPredictingTrajectory;"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'UMotionWarpingComponent::bPredictingTrajectory': Prediction Warping API subject to change. - This API is experimental. As such, there is no guarantee that it won't change or be removed in future releases. Please use at your own risk."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/A_A_m/Documents/Unreal Projects/Prototype_Otome/Plugins/Animation/MotionWarping/Intermediate/Build/Win64/x64/UnrealEditor/Development/MotionWarping/Module.MotionWarping.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Users/A_A_m/Documents/Unreal Projects/Prototype_Otome/Plugins/Animation/MotionWarping/Source/MotionWarping/Private/MotionWarpingComponent.cpp"
+                                },
+                                "region": {
+                                    "startLine": 843,
+                                    "startColumn": 25,
+                                    "snippet": {
+                                        "text": "\tif (NumRemoved > 0 && !bPredictingTrajectory)"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            ],
+            "tool": {
+                "driver": {
+                    "name": "MSVC",
+                    "shortDescription": {
+                        "text": "Microsoft Visual C++ Compiler Warnings/Errors"
+                    },
+                    "informationUri": "https://docs.microsoft.com/cpp/error-messages/compiler-errors-1/c-cpp-build-errors"
+                }
+            }
+        }
+    ]
+}

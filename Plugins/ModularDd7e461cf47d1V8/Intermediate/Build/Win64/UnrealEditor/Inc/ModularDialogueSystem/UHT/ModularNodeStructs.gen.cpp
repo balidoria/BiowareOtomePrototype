@@ -40,14 +40,18 @@ struct UHT_STATICS
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Type_MetaData[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n *\x09""Dialogue object status\n */" },
+#endif
 		{ "ModuleRelativePath", "Public/Node/ModularNodeStructs.h" },
 		{ "Status_Aborted.Name", "EModularDialogueStatus::Status_Aborted" },
 		{ "Status_Executing.Name", "EModularDialogueStatus::Status_Executing" },
 		{ "Status_Failed.Name", "EModularDialogueStatus::Status_Failed" },
 		{ "Status_Finished.Name", "EModularDialogueStatus::Status_Finished" },
 		{ "Status_Waiting.Name", "EModularDialogueStatus::Status_Waiting" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Dialogue object status" },
+#endif
 	};
 #endif // WITH_METADATA
 	static constexpr UECodeGen_Private::FEnumeratorParam Enumerators[] = {
@@ -106,12 +110,16 @@ struct UHT_STATICS
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Type_MetaData[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n *\x09""Dialogue object task type to control dialogue nodes\n */" },
+#endif
 		{ "ModuleRelativePath", "Public/Node/ModularNodeStructs.h" },
 		{ "Task_None.Name", "EModularDialogueObjectTask::Task_None" },
 		{ "Task_NPCDialogue.Name", "EModularDialogueObjectTask::Task_NPCDialogue" },
 		{ "Task_PlayerResponses.Name", "EModularDialogueObjectTask::Task_PlayerResponses" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Dialogue object task type to control dialogue nodes" },
+#endif
 	};
 #endif // WITH_METADATA
 	static constexpr UECodeGen_Private::FEnumeratorParam Enumerators[] = {
@@ -168,7 +176,9 @@ struct UHT_STATICS
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Type_MetaData[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n *\x09""Dialogue set nodes flow type\n */" },
+#endif
 		{ "Flow_End.Comment", "// Select next execution nodes from NPC Nodes\n" },
 		{ "Flow_End.DisplayName", "Ending Node" },
 		{ "Flow_End.Name", "EModularDialogueNodeExecutionFlow::Flow_End" },
@@ -180,7 +190,9 @@ struct UHT_STATICS
 		{ "Flow_Player.DisplayName", "Player Continues" },
 		{ "Flow_Player.Name", "EModularDialogueNodeExecutionFlow::Flow_Player" },
 		{ "ModuleRelativePath", "Public/Node/ModularNodeStructs.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Dialogue set nodes flow type" },
+#endif
 	};
 #endif // WITH_METADATA
 	static constexpr UECodeGen_Private::FEnumeratorParam Enumerators[] = {
@@ -235,88 +247,132 @@ struct UHT_STATICS
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Type_MetaData[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n *\x09""Dialogue set struct for NPC Node\n */" },
+#endif
 		{ "ModuleRelativePath", "Public/Node/ModularNodeStructs.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Dialogue set struct for NPC Node" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DialogueText_MetaData[] = {
 		{ "Category", "Modular Dialogue" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Dialogue line for this node.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Node/ModularNodeStructs.h" },
 		{ "MultiLine", "TRUE" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Dialogue line for this node." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DialogueTextSpeed_MetaData[] = {
 		{ "Category", "Modular Dialogue" },
 		{ "ClampMin", "0" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// In how much time should text be written?\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Node/ModularNodeStructs.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "In how much time should text be written?" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Flow_MetaData[] = {
 		{ "Category", "Modular Dialogue" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Dialogue flow to choose next node.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Node/ModularNodeStructs.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Dialogue flow to choose next node." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PlayerResponses_MetaData[] = {
 		{ "Category", "Modular Dialogue" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Which Player responses are available for this NPC Node?\n" },
+#endif
 		{ "DisplayName", "Player Response" },
 		{ "EditCondition", "Flow == EModularDialogueNodeExecutionFlow::Flow_Player" },
 		{ "EditConditionHides", "" },
 		{ "GetOptions", "GetNodeOptions_Player" },
 		{ "ModuleRelativePath", "Public/Node/ModularNodeStructs.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Which Player responses are available for this NPC Node?" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PlayerResponseSpeed_MetaData[] = {
 		{ "Category", "Modular Dialogue" },
 		{ "ClampMin", "0" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// How fast should every Player response appear with animation?\n" },
+#endif
 		{ "EditCondition", "Flow == EModularDialogueNodeExecutionFlow::Flow_Player" },
 		{ "EditConditionHides", "" },
 		{ "GetOptions", "GetNodeOptions_Player" },
 		{ "ModuleRelativePath", "Public/Node/ModularNodeStructs.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "How fast should every Player response appear with animation?" },
+#endif
 		{ "Units", "Seconds" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_NPCNextNode_MetaData[] = {
 		{ "Category", "Modular Dialogue" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Which NPC Node should be next?\n" },
+#endif
 		{ "DisplayName", "NPC Next Node" },
 		{ "EditCondition", "Flow == EModularDialogueNodeExecutionFlow::Flow_NPC" },
 		{ "EditConditionHides", "" },
 		{ "GetOptions", "GetNodeOptions_NPC" },
 		{ "ModuleRelativePath", "Public/Node/ModularNodeStructs.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Which NPC Node should be next?" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_NPCActions_Inner_MetaData[] = {
 		{ "Category", "Modular Dialogue" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Actions for NPC but Player Actions can be given here too, doesn't matter.\n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Node/ModularNodeStructs.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Actions for NPC but Player Actions can be given here too, doesn't matter." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_NPCActions_MetaData[] = {
 		{ "Category", "Modular Dialogue" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Actions for NPC but Player Actions can be given here too, doesn't matter.\n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Node/ModularNodeStructs.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Actions for NPC but Player Actions can be given here too, doesn't matter." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PlayerActions_Inner_MetaData[] = {
 		{ "Category", "Modular Dialogue" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Actions for Player but NPC Actions can be given here too, doesn't matter.\n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Node/ModularNodeStructs.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Actions for Player but NPC Actions can be given here too, doesn't matter." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PlayerActions_MetaData[] = {
 		{ "Category", "Modular Dialogue" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Actions for Player but NPC Actions can be given here too, doesn't matter.\n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Node/ModularNodeStructs.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Actions for Player but NPC Actions can be given here too, doesn't matter." },
+#endif
 	};
 #endif // WITH_METADATA
 
@@ -346,7 +402,7 @@ struct UHT_STATICS
 const UECodeGen_Private::FStrPropertyParams UHT_STATICS::NewProp_DialogueText = { "DialogueText", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Str, nullptr, nullptr, 1, STRUCT_OFFSET(FModularDialogueNodeNPC, DialogueText), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DialogueText_MetaData), NewProp_DialogueText_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams UHT_STATICS::NewProp_DialogueTextSpeed = { "DialogueTextSpeed", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Float, nullptr, nullptr, 1, STRUCT_OFFSET(FModularDialogueNodeNPC, DialogueTextSpeed), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DialogueTextSpeed_MetaData), NewProp_DialogueTextSpeed_MetaData) };
 const UECodeGen_Private::FBytePropertyParams UHT_STATICS::NewProp_Flow_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams UHT_STATICS::NewProp_Flow = { "Flow", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Enum, nullptr, nullptr, 1, STRUCT_OFFSET(FModularDialogueNodeNPC, Flow), Z_Construct_UEnum_ModularDialogueSystem_EModularDialogueNodeExecutionFlow, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Flow_MetaData), NewProp_Flow_MetaData) }; // 917194c0b89e9365898b4b8d06075ccbbbe78d11
+const UECodeGen_Private::FEnumPropertyParams UHT_STATICS::NewProp_Flow = { "Flow", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Enum, nullptr, nullptr, 1, STRUCT_OFFSET(FModularDialogueNodeNPC, Flow), Z_Construct_UEnum_ModularDialogueSystem_EModularDialogueNodeExecutionFlow, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Flow_MetaData), NewProp_Flow_MetaData) }; // 9bad9bbe94de92040d6a82e45ecfa0f54921ff8c
 const UECodeGen_Private::FNamePropertyParams UHT_STATICS::NewProp_PlayerResponses_Inner = { "PlayerResponses", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Name, nullptr, nullptr, 1, 0, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FArrayPropertyParams UHT_STATICS::NewProp_PlayerResponses = { "PlayerResponses", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Array, nullptr, nullptr, 1, STRUCT_OFFSET(FModularDialogueNodeNPC, PlayerResponses), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PlayerResponses_MetaData), NewProp_PlayerResponses_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams UHT_STATICS::NewProp_PlayerResponseSpeed = { "PlayerResponseSpeed", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Float, nullptr, nullptr, 1, STRUCT_OFFSET(FModularDialogueNodeNPC, PlayerResponseSpeed), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PlayerResponseSpeed_MetaData), NewProp_PlayerResponseSpeed_MetaData) };
@@ -416,42 +472,62 @@ struct UHT_STATICS
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Type_MetaData[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n *\x09""Dialogue set struct for Player Node\n */" },
+#endif
 		{ "ModuleRelativePath", "Public/Node/ModularNodeStructs.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Dialogue set struct for Player Node" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DialogueText_MetaData[] = {
 		{ "Category", "Modular Dialogue" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Dialogue line for this node.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Node/ModularNodeStructs.h" },
 		{ "MultiLine", "TRUE" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Dialogue line for this node." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Flow_MetaData[] = {
 		{ "Category", "Modular Dialogue" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Dialogue flow to choose next node.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Node/ModularNodeStructs.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Dialogue flow to choose next node." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_NPCResponse_MetaData[] = {
 		{ "Category", "Modular Dialogue" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Which NPC Node should be next when Player selects this response?\n" },
+#endif
 		{ "DisplayName", "NPC Response" },
 		{ "EditCondition", "Flow == EModularDialogueNodeExecutionFlow::Flow_NPC" },
 		{ "EditConditionHides", "" },
 		{ "GetOptions", "GetNodeOptions_NPC" },
 		{ "ModuleRelativePath", "Public/Node/ModularNodeStructs.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Which NPC Node should be next when Player selects this response?" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PlayerNextNodes_MetaData[] = {
 		{ "Category", "Modular Dialogue" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Which Player responses are available when Player selects this response?\n" },
+#endif
 		{ "DisplayName", "Player Next Nodes" },
 		{ "EditCondition", "Flow == EModularDialogueNodeExecutionFlow::Flow_Player" },
 		{ "EditConditionHides", "" },
 		{ "GetOptions", "GetNodeOptions_Player" },
 		{ "ModuleRelativePath", "Public/Node/ModularNodeStructs.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Which Player responses are available when Player selects this response?" },
+#endif
 	};
 #endif // WITH_METADATA
 
@@ -474,7 +550,7 @@ struct UHT_STATICS
 // ********** Begin ScriptStruct FModularDialogueNodePlayer Property Definitions *******************
 const UECodeGen_Private::FStrPropertyParams UHT_STATICS::NewProp_DialogueText = { "DialogueText", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Str, nullptr, nullptr, 1, STRUCT_OFFSET(FModularDialogueNodePlayer, DialogueText), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DialogueText_MetaData), NewProp_DialogueText_MetaData) };
 const UECodeGen_Private::FBytePropertyParams UHT_STATICS::NewProp_Flow_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams UHT_STATICS::NewProp_Flow = { "Flow", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Enum, nullptr, nullptr, 1, STRUCT_OFFSET(FModularDialogueNodePlayer, Flow), Z_Construct_UEnum_ModularDialogueSystem_EModularDialogueNodeExecutionFlow, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Flow_MetaData), NewProp_Flow_MetaData) }; // 917194c0b89e9365898b4b8d06075ccbbbe78d11
+const UECodeGen_Private::FEnumPropertyParams UHT_STATICS::NewProp_Flow = { "Flow", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Enum, nullptr, nullptr, 1, STRUCT_OFFSET(FModularDialogueNodePlayer, Flow), Z_Construct_UEnum_ModularDialogueSystem_EModularDialogueNodeExecutionFlow, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Flow_MetaData), NewProp_Flow_MetaData) }; // 9bad9bbe94de92040d6a82e45ecfa0f54921ff8c
 const UECodeGen_Private::FNamePropertyParams UHT_STATICS::NewProp_NPCResponse = { "NPCResponse", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Name, nullptr, nullptr, 1, STRUCT_OFFSET(FModularDialogueNodePlayer, NPCResponse), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_NPCResponse_MetaData), NewProp_NPCResponse_MetaData) };
 const UECodeGen_Private::FNamePropertyParams UHT_STATICS::NewProp_PlayerNextNodes_Inner = { "PlayerNextNodes", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Name, nullptr, nullptr, 1, 0, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FArrayPropertyParams UHT_STATICS::NewProp_PlayerNextNodes = { "PlayerNextNodes", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Array, nullptr, nullptr, 1, STRUCT_OFFSET(FModularDialogueNodePlayer, PlayerNextNodes), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PlayerNextNodes_MetaData), NewProp_PlayerNextNodes_MetaData) };
@@ -534,7 +610,9 @@ struct UHT_STATICS
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Type_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n *\x09Input events to control Dialogue\n *\x09 If you want to add a new event in the code, please handle it from DialogueObject class.\n */" },
+#endif
 		{ "Event_Close.Display_Name", "Close Event" },
 		{ "Event_Close.Name", "EModularDialogueSystemInputEvents::Event_Close" },
 		{ "Event_Down.Display_Name", "Down Event" },
@@ -564,7 +642,9 @@ struct UHT_STATICS
 		{ "Event_Up.Display_Name", "Up Event" },
 		{ "Event_Up.Name", "EModularDialogueSystemInputEvents::Event_Up" },
 		{ "ModuleRelativePath", "Public/Node/ModularNodeStructs.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Input events to control Dialogue\n If you want to add a new event in the code, please handle it from DialogueObject class." },
+#endif
 	};
 #endif // WITH_METADATA
 	static constexpr UECodeGen_Private::FEnumeratorParam Enumerators[] = {
@@ -622,21 +702,21 @@ UEnum* Z_Construct_UEnum_ModularDialogueSystem_EModularDialogueSystemInputEvents
 #ifdef UHT_STATICS
 #error UHT_STATICS already defined
 #endif
-#define UHT_STATICS Z_CompiledInDeferFile_FID_build_U5M_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_ModularDialogueSystem_Source_ModularDialogueSystem_Public_Node_ModularNodeStructs_h__Script_ModularDialogueSystem_Statics
+#define UHT_STATICS Z_CompiledInDeferFile_FID_Users_A_A_m_Documents_Unreal_Projects_Prototype_Otome_Plugins_ModularDd7e461cf47d1V8_Source_ModularDialogueSystem_Public_Node_ModularNodeStructs_h__Script_ModularDialogueSystem_Statics
 struct UHT_STATICS
 {
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
-		{ Z_Construct_UEnum_ModularDialogueSystem_EModularDialogueStatus, TEXT("EModularDialogueStatus"), &ZRIE_EModularDialogueStatus, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3828567109U) },
-		{ Z_Construct_UEnum_ModularDialogueSystem_EModularDialogueObjectTask, TEXT("EModularDialogueObjectTask"), &ZRIE_EModularDialogueObjectTask, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2393510996U) },
-		{ Z_Construct_UEnum_ModularDialogueSystem_EModularDialogueNodeExecutionFlow, TEXT("EModularDialogueNodeExecutionFlow"), &ZRIE_EModularDialogueNodeExecutionFlow, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2440139968U) },
-		{ Z_Construct_UEnum_ModularDialogueSystem_EModularDialogueSystemInputEvents, TEXT("EModularDialogueSystemInputEvents"), &ZRIE_EModularDialogueSystemInputEvents, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3242324860U) },
+		{ Z_Construct_UEnum_ModularDialogueSystem_EModularDialogueStatus, TEXT("EModularDialogueStatus"), &ZRIE_EModularDialogueStatus, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 994301239U) },
+		{ Z_Construct_UEnum_ModularDialogueSystem_EModularDialogueObjectTask, TEXT("EModularDialogueObjectTask"), &ZRIE_EModularDialogueObjectTask, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1213523211U) },
+		{ Z_Construct_UEnum_ModularDialogueSystem_EModularDialogueNodeExecutionFlow, TEXT("EModularDialogueNodeExecutionFlow"), &ZRIE_EModularDialogueNodeExecutionFlow, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2611846078U) },
+		{ Z_Construct_UEnum_ModularDialogueSystem_EModularDialogueSystemInputEvents, TEXT("EModularDialogueSystemInputEvents"), &ZRIE_EModularDialogueSystemInputEvents, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1854308069U) },
 	};
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
-		{ Z_Construct_UScriptStruct_FModularDialogueNodeNPC, Z_Construct_UScriptStruct_FModularDialogueNodeNPC_Statics::NewStructOps, TEXT("ModularDialogueNodeNPC"),&Z_Registration_Info_UScriptStruct_FModularDialogueNodeNPC, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FModularDialogueNodeNPC), 3264243892U) },
-		{ Z_Construct_UScriptStruct_FModularDialogueNodePlayer, Z_Construct_UScriptStruct_FModularDialogueNodePlayer_Statics::NewStructOps, TEXT("ModularDialogueNodePlayer"),&Z_Registration_Info_UScriptStruct_FModularDialogueNodePlayer, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FModularDialogueNodePlayer), 3411687131U) },
+		{ Z_Construct_UScriptStruct_FModularDialogueNodeNPC, Z_Construct_UScriptStruct_FModularDialogueNodeNPC_Statics::NewStructOps, TEXT("ModularDialogueNodeNPC"),&Z_Registration_Info_UScriptStruct_FModularDialogueNodeNPC, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FModularDialogueNodeNPC), 276585936U) },
+		{ Z_Construct_UScriptStruct_FModularDialogueNodePlayer, Z_Construct_UScriptStruct_FModularDialogueNodePlayer_Statics::NewStructOps, TEXT("ModularDialogueNodePlayer"),&Z_Registration_Info_UScriptStruct_FModularDialogueNodePlayer, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FModularDialogueNodePlayer), 1451610099U) },
 	};
 }; // UHT_STATICS 
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_ModularDialogueSystem_Source_ModularDialogueSystem_Public_Node_ModularNodeStructs_h__Script_ModularDialogueSystem_8ac81cd9212792d8f657044575a2d68dd481dbd1{
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_A_A_m_Documents_Unreal_Projects_Prototype_Otome_Plugins_ModularDd7e461cf47d1V8_Source_ModularDialogueSystem_Public_Node_ModularNodeStructs_h__Script_ModularDialogueSystem_dfcb7ea6dc88c3a20c75684682fa1c0ccb9cdf8e{
 	TEXT("/Script/ModularDialogueSystem"),
 	nullptr, 0,
 	UHT_STATICS::ScriptStructInfo, UE_ARRAY_COUNT(UHT_STATICS::ScriptStructInfo),

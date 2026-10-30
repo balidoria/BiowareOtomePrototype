@@ -22,7 +22,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 struct Z_Construct_UScriptStruct_FModularDialogueNodeNPC_Statics;
 MODULARDIALOGUESYSTEM_API UScriptStruct* Z_Construct_UScriptStruct_FModularDialogueNodeNPC(ETypeConstructPhase);
 
-#define FID_build_U5M_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_ModularDialogueSystem_Source_ModularDialogueSystem_Public_Node_ModularNodeStructs_h_52_GENERATED_BODY \
+#define FID_Users_A_A_m_Documents_Unreal_Projects_Prototype_Otome_Plugins_ModularDd7e461cf47d1V8_Source_ModularDialogueSystem_Public_Node_ModularNodeStructs_h_52_GENERATED_BODY \
 	friend struct ::Z_Construct_UScriptStruct_FModularDialogueNodeNPC_Statics; \
 	UE_NODEBUG static UScriptStruct* StaticStruct() { return Z_Construct_UScriptStruct_FModularDialogueNodeNPC(ETypeConstructPhase::Inner); }
 
@@ -34,7 +34,7 @@ struct FModularDialogueNodeNPC;
 struct Z_Construct_UScriptStruct_FModularDialogueNodePlayer_Statics;
 MODULARDIALOGUESYSTEM_API UScriptStruct* Z_Construct_UScriptStruct_FModularDialogueNodePlayer(ETypeConstructPhase);
 
-#define FID_build_U5M_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_ModularDialogueSystem_Source_ModularDialogueSystem_Public_Node_ModularNodeStructs_h_89_GENERATED_BODY \
+#define FID_Users_A_A_m_Documents_Unreal_Projects_Prototype_Otome_Plugins_ModularDd7e461cf47d1V8_Source_ModularDialogueSystem_Public_Node_ModularNodeStructs_h_89_GENERATED_BODY \
 	friend struct ::Z_Construct_UScriptStruct_FModularDialogueNodePlayer_Statics; \
 	UE_NODEBUG static UScriptStruct* StaticStruct() { return Z_Construct_UScriptStruct_FModularDialogueNodePlayer(ETypeConstructPhase::Inner); }
 
@@ -43,7 +43,7 @@ struct FModularDialogueNodePlayer;
 // ********** End ScriptStruct FModularDialogueNodePlayer ******************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_build_U5M_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_ModularDialogueSystem_Source_ModularDialogueSystem_Public_Node_ModularNodeStructs_h
+#define CURRENT_FILE_ID FID_Users_A_A_m_Documents_Unreal_Projects_Prototype_Otome_Plugins_ModularDd7e461cf47d1V8_Source_ModularDialogueSystem_Public_Node_ModularNodeStructs_h
 
 // ********** Begin Enum EModularDialogueStatus ****************************************************
 #define FOREACH_ENUM_EMODULARDIALOGUESTATUS(op) \

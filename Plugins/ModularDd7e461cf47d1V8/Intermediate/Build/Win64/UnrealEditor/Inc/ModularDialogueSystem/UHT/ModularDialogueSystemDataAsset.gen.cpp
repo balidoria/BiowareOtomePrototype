@@ -200,43 +200,65 @@ struct UHT_STATICS
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Type_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * \n */" },
+#endif
 		{ "DisplayName", "Modular Dialogue System Data Asset" },
 		{ "IncludePath", "ModularDialogueSystemDataAsset.h" },
 		{ "ModuleRelativePath", "Public/ModularDialogueSystemDataAsset.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_StartingNode_MetaData[] = {
 		{ "Category", "Modular Dialogue" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Which NPC Node should Dialogue start with \n" },
+#endif
 		{ "GetOptions", "GetNodeOptions_Start" },
 		{ "ModuleRelativePath", "Public/ModularDialogueSystemDataAsset.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Which NPC Node should Dialogue start with" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Actions_Inner_MetaData[] = {
 		{ "Category", "Modular Dialogue" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Actions starts with dialogue and ends when the dialogue is finished/aborted.\n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/ModularDialogueSystemDataAsset.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Actions starts with dialogue and ends when the dialogue is finished/aborted." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Actions_MetaData[] = {
 		{ "Category", "Modular Dialogue" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Actions starts with dialogue and ends when the dialogue is finished/aborted.\n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/ModularDialogueSystemDataAsset.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Actions starts with dialogue and ends when the dialogue is finished/aborted." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_NPCNodes_MetaData[] = {
 		{ "Category", "Modular Dialogue" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Dialogue nodes for NPC\n" },
+#endif
 		{ "ModuleRelativePath", "Public/ModularDialogueSystemDataAsset.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Dialogue nodes for NPC" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PlayerNodes_MetaData[] = {
 		{ "Category", "Modular Dialogue" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Dialogue nodes for Player (Responses)\n" },
+#endif
 		{ "ModuleRelativePath", "Public/ModularDialogueSystemDataAsset.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Dialogue nodes for Player (Responses)" },
+#endif
 	};
 #if WITH_EDITORONLY_DATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Overview_MetaData[] = {
@@ -283,12 +305,12 @@ struct UHT_STATICS
 const UECodeGen_Private::FNamePropertyParams UHT_STATICS::NewProp_StartingNode = { "StartingNode", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Name, nullptr, nullptr, 1, STRUCT_OFFSET(UModularDialogueSystemDataAsset, StartingNode), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_StartingNode_MetaData), NewProp_StartingNode_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams UHT_STATICS::NewProp_Actions_Inner = { "Actions", nullptr, (EPropertyFlags)0x0106000000080008, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, nullptr, nullptr, 1, 0, Z_Construct_UClass_UModularDialogueActionBase, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Actions_Inner_MetaData), NewProp_Actions_Inner_MetaData) };
 const UECodeGen_Private::FArrayPropertyParams UHT_STATICS::NewProp_Actions = { "Actions", nullptr, (EPropertyFlags)0x0114008000000009, UECodeGen_Private::EPropertyGenFlags::Array, nullptr, nullptr, 1, STRUCT_OFFSET(UModularDialogueSystemDataAsset, Actions), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Actions_MetaData), NewProp_Actions_MetaData) };
-const UECodeGen_Private::FStructPropertyParams UHT_STATICS::NewProp_NPCNodes_ValueProp = { "NPCNodes", nullptr, (EPropertyFlags)0x0000008000000001, UECodeGen_Private::EPropertyGenFlags::Struct, nullptr, nullptr, 1, 1, Z_Construct_UScriptStruct_FModularDialogueNodeNPC, METADATA_PARAMS(0, nullptr) }; // c29068b4e56d89d3f20163167c06d54555f949b2
+const UECodeGen_Private::FStructPropertyParams UHT_STATICS::NewProp_NPCNodes_ValueProp = { "NPCNodes", nullptr, (EPropertyFlags)0x0000008000000001, UECodeGen_Private::EPropertyGenFlags::Struct, nullptr, nullptr, 1, 1, Z_Construct_UScriptStruct_FModularDialogueNodeNPC, METADATA_PARAMS(0, nullptr) }; // 107c5dd0d5615bf3f78a06963e4eddb5ffefca8b
 const UECodeGen_Private::FNamePropertyParams UHT_STATICS::NewProp_NPCNodes_Key_KeyProp = { "NPCNodes_Key", nullptr, (EPropertyFlags)0x0000008000000001, UECodeGen_Private::EPropertyGenFlags::Name, nullptr, nullptr, 1, 0, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FMapPropertyParams UHT_STATICS::NewProp_NPCNodes = { "NPCNodes", nullptr, (EPropertyFlags)0x0010008000000001, UECodeGen_Private::EPropertyGenFlags::Map, nullptr, nullptr, 1, STRUCT_OFFSET(UModularDialogueSystemDataAsset, NPCNodes), EMapPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_NPCNodes_MetaData), NewProp_NPCNodes_MetaData) }; // c29068b4e56d89d3f20163167c06d54555f949b2
-const UECodeGen_Private::FStructPropertyParams UHT_STATICS::NewProp_PlayerNodes_ValueProp = { "PlayerNodes", nullptr, (EPropertyFlags)0x0000000000000001, UECodeGen_Private::EPropertyGenFlags::Struct, nullptr, nullptr, 1, 1, Z_Construct_UScriptStruct_FModularDialogueNodePlayer, METADATA_PARAMS(0, nullptr) }; // cb5a36db54ac69c2a2c5809c8fee7ea2ac6197ff
+const UECodeGen_Private::FMapPropertyParams UHT_STATICS::NewProp_NPCNodes = { "NPCNodes", nullptr, (EPropertyFlags)0x0010008000000001, UECodeGen_Private::EPropertyGenFlags::Map, nullptr, nullptr, 1, STRUCT_OFFSET(UModularDialogueSystemDataAsset, NPCNodes), EMapPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_NPCNodes_MetaData), NewProp_NPCNodes_MetaData) }; // 107c5dd0d5615bf3f78a06963e4eddb5ffefca8b
+const UECodeGen_Private::FStructPropertyParams UHT_STATICS::NewProp_PlayerNodes_ValueProp = { "PlayerNodes", nullptr, (EPropertyFlags)0x0000000000000001, UECodeGen_Private::EPropertyGenFlags::Struct, nullptr, nullptr, 1, 1, Z_Construct_UScriptStruct_FModularDialogueNodePlayer, METADATA_PARAMS(0, nullptr) }; // 5685cff3b2e7b905210d413b1b318e2520799a1c
 const UECodeGen_Private::FNamePropertyParams UHT_STATICS::NewProp_PlayerNodes_Key_KeyProp = { "PlayerNodes_Key", nullptr, (EPropertyFlags)0x0000000000000001, UECodeGen_Private::EPropertyGenFlags::Name, nullptr, nullptr, 1, 0, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FMapPropertyParams UHT_STATICS::NewProp_PlayerNodes = { "PlayerNodes", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Map, nullptr, nullptr, 1, STRUCT_OFFSET(UModularDialogueSystemDataAsset, PlayerNodes), EMapPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PlayerNodes_MetaData), NewProp_PlayerNodes_MetaData) }; // cb5a36db54ac69c2a2c5809c8fee7ea2ac6197ff
+const UECodeGen_Private::FMapPropertyParams UHT_STATICS::NewProp_PlayerNodes = { "PlayerNodes", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Map, nullptr, nullptr, 1, STRUCT_OFFSET(UModularDialogueSystemDataAsset, PlayerNodes), EMapPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PlayerNodes_MetaData), NewProp_PlayerNodes_MetaData) }; // 5685cff3b2e7b905210d413b1b318e2520799a1c
 #if WITH_EDITORONLY_DATA
 const UECodeGen_Private::FStrPropertyParams UHT_STATICS::NewProp_Overview = { "Overview", nullptr, (EPropertyFlags)0x0010000800020001, UECodeGen_Private::EPropertyGenFlags::Str, nullptr, nullptr, 1, STRUCT_OFFSET(UModularDialogueSystemDataAsset, Overview), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Overview_MetaData), NewProp_Overview_MetaData) };
 #endif // WITH_EDITORONLY_DATA
@@ -376,14 +398,14 @@ UModularDialogueSystemDataAsset::~UModularDialogueSystemDataAsset() {}
 #ifdef UHT_STATICS
 #error UHT_STATICS already defined
 #endif
-#define UHT_STATICS Z_CompiledInDeferFile_FID_build_U5M_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_ModularDialogueSystem_Source_ModularDialogueSystem_Public_ModularDialogueSystemDataAsset_h__Script_ModularDialogueSystem_Statics
+#define UHT_STATICS Z_CompiledInDeferFile_FID_Users_A_A_m_Documents_Unreal_Projects_Prototype_Otome_Plugins_ModularDd7e461cf47d1V8_Source_ModularDialogueSystem_Public_ModularDialogueSystemDataAsset_h__Script_ModularDialogueSystem_Statics
 struct UHT_STATICS
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UModularDialogueSystemDataAsset, TEXT("UModularDialogueSystemDataAsset"), &Z_Registration_Info_UClass_UModularDialogueSystemDataAsset, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UModularDialogueSystemDataAsset), 4274430255U) },
+		{ Z_Construct_UClass_UModularDialogueSystemDataAsset, TEXT("UModularDialogueSystemDataAsset"), &Z_Registration_Info_UClass_UModularDialogueSystemDataAsset, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UModularDialogueSystemDataAsset), 2261676391U) },
 	};
 }; // UHT_STATICS 
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_ModularDialogueSystem_Source_ModularDialogueSystem_Public_ModularDialogueSystemDataAsset_h__Script_ModularDialogueSystem_131a287ece4a797b0557b2872a0c39e1000f44f4{
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_A_A_m_Documents_Unreal_Projects_Prototype_Otome_Plugins_ModularDd7e461cf47d1V8_Source_ModularDialogueSystem_Public_ModularDialogueSystemDataAsset_h__Script_ModularDialogueSystem_74d1ef84e7ca5aa732f6ac19a9df1009f93db252{
 	TEXT("/Script/ModularDialogueSystem"),
 	UHT_STATICS::ClassInfo, UE_ARRAY_COUNT(UHT_STATICS::ClassInfo),
 	nullptr, 0,

@@ -1,0 +1,22 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.MotionWarping.cpp.obj": [
+			"MotionWarping.init.gen.cpp.obj",
+			"MotionWarpingAdapter.gen.cpp.obj",
+			"PerModuleInline.gen.cpp.obj",
+			"AnimNotifyState_MotionWarping.cpp.obj",
+			"AttributeBasedRootMotionComponent.cpp.obj",
+			"MotionWarping.cpp.obj",
+			"MotionWarpingCharacterAdapter.cpp.obj",
+			"MotionWarpingComponent.cpp.obj",
+			"MotionWarpingFunctionLibrary.cpp.obj",
+			"MotionWarpingMontageTrajectoryAdapter.cpp.obj",
+			"MotionWarpingSwitchOffCondition.cpp.obj",
+			"RootMotionModifier.cpp.obj",
+			"RootMotionModifier_AdjustmentBlendWarp.cpp.obj",
+			"RootMotionModifier_PrecomputedWarp.cpp.obj",
+			"RootMotionModifier_SkewWarp.cpp.obj"
+		]
+	}
+}
