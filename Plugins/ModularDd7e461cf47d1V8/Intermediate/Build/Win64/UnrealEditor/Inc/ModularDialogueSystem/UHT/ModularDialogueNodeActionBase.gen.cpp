@@ -39,10 +39,14 @@ struct UHT_STATICS
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Type_MetaData[] = {
 		{ "Category", "Modular Dialogue" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Get the desired parameter from NPC's DialogueComponent\n" },
+#endif
 		{ "DisplayName", "Get Parameter (By NPC)" },
 		{ "ModuleRelativePath", "Public/Node/ModularDialogueNodeActionBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Get the desired parameter from NPC's DialogueComponent" },
+#endif
 	};
 #endif // WITH_METADATA
 
@@ -100,10 +104,14 @@ struct UHT_STATICS
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Type_MetaData[] = {
 		{ "Category", "Modular Dialogue" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Get the desired parameter from Player's DialogueComponent\n" },
+#endif
 		{ "DisplayName", "Get Parameter (By Player)" },
 		{ "ModuleRelativePath", "Public/Node/ModularDialogueNodeActionBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Get the desired parameter from Player's DialogueComponent" },
+#endif
 	};
 #endif // WITH_METADATA
 
@@ -180,10 +188,14 @@ struct UHT_STATICS
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Type_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 *\x09""Can abort Dialogue completely?\n\x09 *\x09 Player can't abort (Close event) the Dialogue until this function returns true\n\x09 */" },
+#endif
 		{ "DisplayName", "Can Abort Dialogue" },
 		{ "ModuleRelativePath", "Public/Node/ModularDialogueNodeActionBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Can abort Dialogue completely?\n Player can't abort (Close event) the Dialogue until this function returns true" },
+#endif
 	};
 #endif // WITH_METADATA
 
@@ -260,10 +272,14 @@ struct UHT_STATICS
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Type_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 *\x09""Can end action owner Dialogue Node?\n\x09 *\x09 Player responses or Next button won't appear until this function returns true\n\x09 */" },
+#endif
 		{ "DisplayName", "Can End Action" },
 		{ "ModuleRelativePath", "Public/Node/ModularDialogueNodeActionBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Can end action owner Dialogue Node?\n Player responses or Next button won't appear until this function returns true" },
+#endif
 	};
 #endif // WITH_METADATA
 
@@ -334,10 +350,14 @@ struct UHT_STATICS
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Type_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Called when action owner Dialogue Node is ended.\n" },
+#endif
 		{ "DisplayName", "End Action" },
 		{ "ModuleRelativePath", "Public/Node/ModularDialogueNodeActionBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Called when action owner Dialogue Node is ended." },
+#endif
 	};
 #endif // WITH_METADATA
 
@@ -351,7 +371,7 @@ struct UHT_STATICS
 
 // ********** Begin Function K2_EndAction Property Definitions *************************************
 const UECodeGen_Private::FBytePropertyParams UHT_STATICS::NewProp_DialogueStatus_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams UHT_STATICS::NewProp_DialogueStatus = { "DialogueStatus", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, nullptr, nullptr, 1, STRUCT_OFFSET(ModularDialogueNodeActionBase_eventK2_EndAction_Parms, DialogueStatus), Z_Construct_UEnum_ModularDialogueSystem_EModularDialogueStatus, METADATA_PARAMS(0, nullptr) }; // e4334c45368bf0b831f04a4d6d1c47203b8b125c
+const UECodeGen_Private::FEnumPropertyParams UHT_STATICS::NewProp_DialogueStatus = { "DialogueStatus", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, nullptr, nullptr, 1, STRUCT_OFFSET(ModularDialogueNodeActionBase_eventK2_EndAction_Parms, DialogueStatus), Z_Construct_UEnum_ModularDialogueSystem_EModularDialogueStatus, METADATA_PARAMS(0, nullptr) }; // 3b43d537a96a431b67f7b5a5cb2064be9d53f145
 const UECodeGen_Private::FPropertyParamsBase* const UHT_STATICS::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&UHT_STATICS::NewProp_DialogueStatus_Underlying,
 	(const UECodeGen_Private::FPropertyParamsBase*)&UHT_STATICS::NewProp_DialogueStatus,
@@ -402,10 +422,14 @@ struct UHT_STATICS
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Type_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Called when action owner Dialogue Node is executed. \n" },
+#endif
 		{ "DisplayName", "Execute Action" },
 		{ "ModuleRelativePath", "Public/Node/ModularDialogueNodeActionBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Called when action owner Dialogue Node is executed." },
+#endif
 	};
 #endif // WITH_METADATA
 
@@ -463,10 +487,14 @@ struct UHT_STATICS
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Type_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Called when just before Dialogue is started\n" },
+#endif
 		{ "DisplayName", "Prepare Context" },
 		{ "ModuleRelativePath", "Public/Node/ModularDialogueNodeActionBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Called when just before Dialogue is started" },
+#endif
 	};
 #endif // WITH_METADATA
 
@@ -538,10 +566,14 @@ struct UHT_STATICS
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Type_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Tick event only works if Action is active.\n" },
+#endif
 		{ "DisplayName", "Tick" },
 		{ "ModuleRelativePath", "Public/Node/ModularDialogueNodeActionBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Tick event only works if Action is active." },
+#endif
 	};
 #endif // WITH_METADATA
 
@@ -605,9 +637,13 @@ struct UHT_STATICS
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bIsActive_MetaData[] = {
 		{ "Category", "Modular Dialogue" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Is Dialogue Node Action currently active?\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Node/ModularDialogueNodeActionBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Is Dialogue Node Action currently active?" },
+#endif
 	};
 #endif // WITH_METADATA
 
@@ -633,14 +669,14 @@ struct UHT_STATICS
 	};
 	static FTypeConstructFunc* DependentSingletons[];
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UModularDialogueNodeActionBase_GetParameter_NPC, "GetParameter_NPC" }, // 0e58759017954698b189daea995a728042339e2a
-		{ &Z_Construct_UFunction_UModularDialogueNodeActionBase_GetParameter_Player, "GetParameter_Player" }, // 0d5748375b9408d42d54c9dd2e33b0004cdf2e68
-		{ &Z_Construct_UFunction_UModularDialogueNodeActionBase_K2_CanAbortDialogue, "K2_CanAbortDialogue" }, // 7c754a02df82ac403855fe3f494136d2f2745b7f
-		{ &Z_Construct_UFunction_UModularDialogueNodeActionBase_K2_CanEndAction, "K2_CanEndAction" }, // cb0732bea4a6c40f610f2a2b2fb4bb252113769f
-		{ &Z_Construct_UFunction_UModularDialogueNodeActionBase_K2_EndAction, "K2_EndAction" }, // 81f098e099dfb7d749c7f56770047ee232f128e5
-		{ &Z_Construct_UFunction_UModularDialogueNodeActionBase_K2_ExecuteAction, "K2_ExecuteAction" }, // 70342b5aa40ca119267167d4e512808e58d411a3
-		{ &Z_Construct_UFunction_UModularDialogueNodeActionBase_K2_PrepareContext, "K2_PrepareContext" }, // d4b1c62972fd63dbffe68d39de1a59b22298b6d7
-		{ &Z_Construct_UFunction_UModularDialogueNodeActionBase_K2_Tick, "K2_Tick" }, // 88f1443890eb980f7a0666842e11efca96eabca8
+		{ &Z_Construct_UFunction_UModularDialogueNodeActionBase_GetParameter_NPC, "GetParameter_NPC" }, // e233c4c11067df710265748151e50785fb3e30f8
+		{ &Z_Construct_UFunction_UModularDialogueNodeActionBase_GetParameter_Player, "GetParameter_Player" }, // f7d5fd76b8c37770dc5b416a1712b9892e2a095b
+		{ &Z_Construct_UFunction_UModularDialogueNodeActionBase_K2_CanAbortDialogue, "K2_CanAbortDialogue" }, // db74283e3261e61531897e60f4d0854df16551d9
+		{ &Z_Construct_UFunction_UModularDialogueNodeActionBase_K2_CanEndAction, "K2_CanEndAction" }, // 765e10c38832abb64d7903bbb9eafca7fd95c4a1
+		{ &Z_Construct_UFunction_UModularDialogueNodeActionBase_K2_EndAction, "K2_EndAction" }, // ee67f517c6b6802277ebdac8dfefd2ecb82386a9
+		{ &Z_Construct_UFunction_UModularDialogueNodeActionBase_K2_ExecuteAction, "K2_ExecuteAction" }, // 0aa8e629f056e27409763f464decf9db2af6dfd6
+		{ &Z_Construct_UFunction_UModularDialogueNodeActionBase_K2_PrepareContext, "K2_PrepareContext" }, // 6bb7438f14ec0c53c3b243fe4090681bd3bd8198
+		{ &Z_Construct_UFunction_UModularDialogueNodeActionBase_K2_Tick, "K2_Tick" }, // 0ce188b871babc2b00e05b68b989b62a687691b5
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -728,14 +764,14 @@ UModularDialogueNodeActionBase::~UModularDialogueNodeActionBase() {}
 #ifdef UHT_STATICS
 #error UHT_STATICS already defined
 #endif
-#define UHT_STATICS Z_CompiledInDeferFile_FID_build_U5M_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_ModularDialogueSystem_Source_ModularDialogueSystem_Public_Node_ModularDialogueNodeActionBase_h__Script_ModularDialogueSystem_Statics
+#define UHT_STATICS Z_CompiledInDeferFile_FID_Users_A_A_m_Documents_Unreal_Projects_Prototype_Otome_Plugins_ModularDd7e461cf47d1V8_Source_ModularDialogueSystem_Public_Node_ModularDialogueNodeActionBase_h__Script_ModularDialogueSystem_Statics
 struct UHT_STATICS
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UModularDialogueNodeActionBase, TEXT("UModularDialogueNodeActionBase"), &Z_Registration_Info_UClass_UModularDialogueNodeActionBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UModularDialogueNodeActionBase), 2012056924U) },
+		{ Z_Construct_UClass_UModularDialogueNodeActionBase, TEXT("UModularDialogueNodeActionBase"), &Z_Registration_Info_UClass_UModularDialogueNodeActionBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UModularDialogueNodeActionBase), 2796297667U) },
 	};
 }; // UHT_STATICS 
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_ModularDialogueSystem_Source_ModularDialogueSystem_Public_Node_ModularDialogueNodeActionBase_h__Script_ModularDialogueSystem_175745ccdc0d7ee1743f0a47eb2097c5d0c2eaae{
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_A_A_m_Documents_Unreal_Projects_Prototype_Otome_Plugins_ModularDd7e461cf47d1V8_Source_ModularDialogueSystem_Public_Node_ModularDialogueNodeActionBase_h__Script_ModularDialogueSystem_f74af9be48ed6836a4da2c4155d7985839284a23{
 	TEXT("/Script/ModularDialogueSystem"),
 	UHT_STATICS::ClassInfo, UE_ARRAY_COUNT(UHT_STATICS::ClassInfo),
 	nullptr, 0,

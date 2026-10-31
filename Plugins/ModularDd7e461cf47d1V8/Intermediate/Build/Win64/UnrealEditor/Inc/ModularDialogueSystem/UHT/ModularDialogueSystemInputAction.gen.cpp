@@ -47,10 +47,14 @@ struct UHT_STATICS
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Type_MetaData[] = {
 		{ "Category", "Modular Dialogue" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Called by DialogueSystem itself when a Dialogue is ended.\n//  Should handle Player's input only\n" },
+#endif
 		{ "DisplayName", "On Dialogue Finished" },
 		{ "ModuleRelativePath", "Public/ModularDialogueSystemInputAction.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Called by DialogueSystem itself when a Dialogue is ended.\n Should handle Player's input only" },
+#endif
 	};
 #endif // WITH_METADATA
 
@@ -107,10 +111,14 @@ struct UHT_STATICS
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Type_MetaData[] = {
 		{ "Category", "Modular Dialogue" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Called by DialogueSystem itself when a Dialogue is started.\n//  Should handle Player's input only\n" },
+#endif
 		{ "DisplayName", "On Dialogue Started" },
 		{ "ModuleRelativePath", "Public/ModularDialogueSystemInputAction.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Called by DialogueSystem itself when a Dialogue is started.\n Should handle Player's input only" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Widget_MetaData[] = {
 		{ "EditInline", "true" },
@@ -163,7 +171,9 @@ struct UHT_STATICS
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Type_MetaData[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * \n */" },
+#endif
 		{ "IncludePath", "ModularDialogueSystemInputAction.h" },
 		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "Public/ModularDialogueSystemInputAction.h" },
@@ -183,8 +193,8 @@ struct UHT_STATICS
 	};
 	static FTypeConstructFunc* DependentSingletons[];
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UModularDialogueSystemInputAction_K2_OnDialogueFinished, "K2_OnDialogueFinished" }, // c086efa9a430db1c981cefb677505922f992580d
-		{ &Z_Construct_UFunction_UModularDialogueSystemInputAction_K2_OnDialogueStarted, "K2_OnDialogueStarted" }, // bd002312eb86912adc2e4359ab87f5cd1ddb449f
+		{ &Z_Construct_UFunction_UModularDialogueSystemInputAction_K2_OnDialogueFinished, "K2_OnDialogueFinished" }, // a15120940429e21c660435e954ac522b1cf5984a
+		{ &Z_Construct_UFunction_UModularDialogueSystemInputAction_K2_OnDialogueStarted, "K2_OnDialogueStarted" }, // 424aa77087b65f396d0576431726be3b41a423df
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -268,14 +278,14 @@ UModularDialogueSystemInputAction::~UModularDialogueSystemInputAction() {}
 #ifdef UHT_STATICS
 #error UHT_STATICS already defined
 #endif
-#define UHT_STATICS Z_CompiledInDeferFile_FID_build_U5M_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_ModularDialogueSystem_Source_ModularDialogueSystem_Public_ModularDialogueSystemInputAction_h__Script_ModularDialogueSystem_Statics
+#define UHT_STATICS Z_CompiledInDeferFile_FID_Users_A_A_m_Documents_Unreal_Projects_Prototype_Otome_Plugins_ModularDd7e461cf47d1V8_Source_ModularDialogueSystem_Public_ModularDialogueSystemInputAction_h__Script_ModularDialogueSystem_Statics
 struct UHT_STATICS
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UModularDialogueSystemInputAction, TEXT("UModularDialogueSystemInputAction"), &Z_Registration_Info_UClass_UModularDialogueSystemInputAction, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UModularDialogueSystemInputAction), 3773370943U) },
+		{ Z_Construct_UClass_UModularDialogueSystemInputAction, TEXT("UModularDialogueSystemInputAction"), &Z_Registration_Info_UClass_UModularDialogueSystemInputAction, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UModularDialogueSystemInputAction), 3636184716U) },
 	};
 }; // UHT_STATICS 
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_ModularDialogueSystem_Source_ModularDialogueSystem_Public_ModularDialogueSystemInputAction_h__Script_ModularDialogueSystem_8a7bc8b56d42dcb7900a870da723a690b276b082{
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_A_A_m_Documents_Unreal_Projects_Prototype_Otome_Plugins_ModularDd7e461cf47d1V8_Source_ModularDialogueSystem_Public_ModularDialogueSystemInputAction_h__Script_ModularDialogueSystem_8b4b72153a80ee1a8e9c7be34ae653d8e45accb6{
 	TEXT("/Script/ModularDialogueSystem"),
 	UHT_STATICS::ClassInfo, UE_ARRAY_COUNT(UHT_STATICS::ClassInfo),
 	nullptr, 0,

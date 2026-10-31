@@ -2198,3 +2198,10 @@ Content/EasyFog/Levels/Sequences/SEQ_Demo.uasset
 Content/EasyFog/Levels/Level_Demo.umap
 Content/Waterfall/Map/Untitled_HLOD0_Instancing.uasset
 Content/Waterfall/Map/Waterfall_Demo.umap
+Binaries/Win64/UnrealEditor-Prototype_Otome.pdb
+Binaries/Win64/Prototype_Otome.exp
+Binaries/Win64/Prototype_Otome.pdb
+Binaries/Win64/Prototype_Otome.target
+Binaries/Win64/Prototype_OtomeEditor.target
+Binaries/Win64/UnrealEditor.modules
+Binaries/Win64/UnrealEditor-Prototype_Otome.dll

@@ -1,0 +1,32 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.ModularDialogueSystem.cpp.obj": [
+			"ModularDialogueActionBase.gen.cpp.obj",
+			"ModularDialogueComponent.gen.cpp.obj",
+			"ModularDialogueNodeActionBase.gen.cpp.obj",
+			"ModularDialogueObject.gen.cpp.obj",
+			"ModularDialogueSubsystem.gen.cpp.obj",
+			"ModularDialogueSystem.init.gen.cpp.obj",
+			"ModularDialogueSystemDataAsset.gen.cpp.obj",
+			"ModularDialogueSystemDeveloperSettings.gen.cpp.obj",
+			"ModularDialogueSystemInputAction.gen.cpp.obj",
+			"ModularDialogueSystemLibrary.gen.cpp.obj",
+			"ModularDialogueSystemUserWidget.gen.cpp.obj",
+			"ModularNodeStructs.gen.cpp.obj",
+			"PerModuleInline.gen.cpp.obj",
+			"ModularDialogueActionBase.cpp.obj",
+			"ModularDialogueComponent.cpp.obj",
+			"ModularDialogueObject.cpp.obj",
+			"ModularDialogueSubsystem.cpp.obj",
+			"ModularDialogueSystem.cpp.obj",
+			"ModularDialogueSystemDataAsset.cpp.obj",
+			"ModularDialogueSystemDeveloperSettings.cpp.obj",
+			"ModularDialogueSystemInputAction.cpp.obj",
+			"ModularDialogueSystemLibrary.cpp.obj",
+			"ModularDialogueSystemUserWidget.cpp.obj",
+			"ModularDialogueNodeActionBase.cpp.obj",
+			"ModularNodeStructs.cpp.obj"
+		]
+	}
+}

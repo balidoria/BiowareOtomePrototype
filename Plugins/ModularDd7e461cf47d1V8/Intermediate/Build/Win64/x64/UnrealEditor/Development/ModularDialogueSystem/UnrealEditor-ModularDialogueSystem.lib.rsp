@@ -1,0 +1,12 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/experimental:deterministic
+/DEF
+/NAME:"UnrealEditor-ModularDialogueSystem.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:/Users/A_A_m/Documents/Unreal Projects/Prototype_Otome/Intermediate/Build/Win64/x64/Prototype_OtomeEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.h.obj"
+"C:/Users/A_A_m/Documents/Unreal Projects/Prototype_Otome/Plugins/ModularDd7e461cf47d1V8/Intermediate/Build/Win64/x64/UnrealEditor/Development/ModularDialogueSystem/Module.ModularDialogueSystem.cpp.obj"
+/OUT:"C:/Users/A_A_m/Documents/Unreal Projects/Prototype_Otome/Plugins/ModularDd7e461cf47d1V8/Intermediate/Build/Win64/x64/UnrealEditor/Development/ModularDialogueSystem/UnrealEditor-ModularDialogueSystem.lib"

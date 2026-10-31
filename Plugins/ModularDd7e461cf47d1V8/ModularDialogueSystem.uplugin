@@ -17,7 +17,7 @@
 		{
 			"Name": "ModularDialogueSystem",
 			"Type": "Runtime",
-			"LoadingPhase": "PreDefault"
+			"LoadingPhase": "Default"
 		}
 	],
 	"Plugins": [

@@ -21,7 +21,7 @@ class UMotionWarpingComponent;
 class URootMotionModifier;
 
 // ********** Begin Class UAnimNotifyState_MotionWarping *******************************************
-#define FID_Engine_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_AnimNotifyState_MotionWarping_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_Users_A_A_m_Documents_Unreal_Projects_Prototype_Otome_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_AnimNotifyState_MotionWarping_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
 	MOTIONWARPING_API virtual URootMotionModifier* AddRootMotionModifier_Implementation(UMotionWarpingComponent* MotionWarpingComp, const UAnimSequenceBase* Animation, float StartTime, float EndTime) const; \
 	DECLARE_FUNCTION(execOnRootMotionModifierDeactivate); \
 	DECLARE_FUNCTION(execOnRootMotionModifierUpdate); \
@@ -29,11 +29,11 @@ class URootMotionModifier;
 	DECLARE_FUNCTION(execAddRootMotionModifier);
 
 
-#define FID_Engine_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_AnimNotifyState_MotionWarping_h_18_CALLBACK_WRAPPERS
+#define FID_Users_A_A_m_Documents_Unreal_Projects_Prototype_Otome_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_AnimNotifyState_MotionWarping_h_18_CALLBACK_WRAPPERS
 struct Z_Construct_UClass_UAnimNotifyState_MotionWarping_Statics;
 MOTIONWARPING_API UClass* Z_Construct_UClass_UAnimNotifyState_MotionWarping(ETypeConstructPhase);
 
-#define FID_Engine_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_AnimNotifyState_MotionWarping_h_18_INCLASS_NO_PURE_DECLS \
+#define FID_Users_A_A_m_Documents_Unreal_Projects_Prototype_Otome_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_AnimNotifyState_MotionWarping_h_18_INCLASS_NO_PURE_DECLS \
 private: \
 	friend struct ::Z_Construct_UClass_UAnimNotifyState_MotionWarping_Statics; \
 	friend MOTIONWARPING_API UClass* ::Z_Construct_UClass_UAnimNotifyState_MotionWarping(ETypeConstructPhase); \
@@ -42,7 +42,7 @@ public: \
 	DECLARE_SERIALIZER(UAnimNotifyState_MotionWarping)
 
 
-#define FID_Engine_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_AnimNotifyState_MotionWarping_h_18_ENHANCED_CONSTRUCTORS \
+#define FID_Users_A_A_m_Documents_Unreal_Projects_Prototype_Otome_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_AnimNotifyState_MotionWarping_h_18_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	UAnimNotifyState_MotionWarping(UAnimNotifyState_MotionWarping&&) = delete; \
 	UAnimNotifyState_MotionWarping(const UAnimNotifyState_MotionWarping&) = delete; \
@@ -52,14 +52,14 @@ public: \
 	MOTIONWARPING_API virtual ~UAnimNotifyState_MotionWarping();
 
 
-#define FID_Engine_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_AnimNotifyState_MotionWarping_h_15_PROLOG
-#define FID_Engine_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_AnimNotifyState_MotionWarping_h_18_GENERATED_BODY \
+#define FID_Users_A_A_m_Documents_Unreal_Projects_Prototype_Otome_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_AnimNotifyState_MotionWarping_h_15_PROLOG
+#define FID_Users_A_A_m_Documents_Unreal_Projects_Prototype_Otome_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_AnimNotifyState_MotionWarping_h_18_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Engine_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_AnimNotifyState_MotionWarping_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_Engine_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_AnimNotifyState_MotionWarping_h_18_CALLBACK_WRAPPERS \
-	FID_Engine_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_AnimNotifyState_MotionWarping_h_18_INCLASS_NO_PURE_DECLS \
-	FID_Engine_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_AnimNotifyState_MotionWarping_h_18_ENHANCED_CONSTRUCTORS \
+	FID_Users_A_A_m_Documents_Unreal_Projects_Prototype_Otome_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_AnimNotifyState_MotionWarping_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Users_A_A_m_Documents_Unreal_Projects_Prototype_Otome_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_AnimNotifyState_MotionWarping_h_18_CALLBACK_WRAPPERS \
+	FID_Users_A_A_m_Documents_Unreal_Projects_Prototype_Otome_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_AnimNotifyState_MotionWarping_h_18_INCLASS_NO_PURE_DECLS \
+	FID_Users_A_A_m_Documents_Unreal_Projects_Prototype_Otome_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_AnimNotifyState_MotionWarping_h_18_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -69,6 +69,6 @@ class UAnimNotifyState_MotionWarping;
 // ********** End Class UAnimNotifyState_MotionWarping *********************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Engine_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_AnimNotifyState_MotionWarping_h
+#define CURRENT_FILE_ID FID_Users_A_A_m_Documents_Unreal_Projects_Prototype_Otome_Plugins_Animation_MotionWarping_Source_MotionWarping_Public_AnimNotifyState_MotionWarping_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
