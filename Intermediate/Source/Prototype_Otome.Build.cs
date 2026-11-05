@@ -9,7 +9,6 @@ public class Prototype_Otome : ModuleRules
         PublicDependencyModuleNames.AddRange(
             new string[]
             {
-		...,
                 "Core",
                 "CoreUObject",
                 "Engine",

@@ -2205,3 +2205,6 @@ Binaries/Win64/Prototype_Otome.target
 Binaries/Win64/Prototype_OtomeEditor.target
 Binaries/Win64/UnrealEditor.modules
 Binaries/Win64/UnrealEditor-Prototype_Otome.dll
+Binaries/Win64/Prototype_Otome-Win64-Shipping.exp
+Binaries/Win64/Prototype_Otome-Win64-Shipping.pdb
+Binaries/Win64/Prototype_Otome-Win64-Shipping.target
